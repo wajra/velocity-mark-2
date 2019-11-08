@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1572373554117.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "621583414",
+    "id" : "82EF5F18",
+    "lastKnownWriteTime" : 1570315974,
+    "last_content_update" : 1570315974,
+    "path" : "~/Graduate Studies/Pinsky Lab/Project Velocity/project_velocity-master/1_data_trawlData.R",
+    "project_path" : "1_data_trawlData.R",
+    "properties" : {
+        "cursorPosition" : "37,23",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 9,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

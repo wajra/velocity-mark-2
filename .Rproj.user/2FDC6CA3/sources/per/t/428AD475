@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1572128149526.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "516762195",
+    "id" : "428AD475",
+    "lastKnownWriteTime" : 1570315976,
+    "last_content_update" : 1570315976,
+    "path" : "~/Graduate Studies/Pinsky Lab/Project Velocity/project_velocity-master/7_Prep_Projections.R",
+    "project_path" : "7_Prep_Projections.R",
+    "properties" : {
+        "cursorPosition" : "11,1",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

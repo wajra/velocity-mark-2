@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1568484411490.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1754013132",
+    "id" : "2E5BA1A8",
+    "lastKnownWriteTime" : 1568738274,
+    "last_content_update" : 1568738274821,
+    "path" : "D:/Pinsky Lab/Project Velocity/project_velocity-master/6_ver_1_model_fitting_loop_black_sea_bass.R",
+    "project_path" : "6_ver_1_model_fitting_loop_black_sea_bass.R",
+    "properties" : {
+        "cursorPosition" : "0,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

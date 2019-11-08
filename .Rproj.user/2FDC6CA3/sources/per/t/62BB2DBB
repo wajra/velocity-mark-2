@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1572373551589.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3735875662",
+    "id" : "62BB2DBB",
+    "lastKnownWriteTime" : 1570315974,
+    "last_content_update" : 1570315974,
+    "path" : "~/Graduate Studies/Pinsky Lab/Project Velocity/project_velocity-master/5.4_master_haul_file.R",
+    "project_path" : "5.4_master_haul_file.R",
+    "properties" : {
+        "cursorPosition" : "19,20",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

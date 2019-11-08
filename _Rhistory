@@ -1,0 +1,50 @@
+install.packages(c("data.table", "Hmisc", "zoo"))
+install.packages("dismo")
+load("D:/Pinsky Lab/Project Velocity/project_velocity-master/data/master_hauls_March7_2017.RData")
+View(hauls)
+load("D:/Pinsky Lab/Project Velocity/project_velocity-master/data/dat_selectedspp_Feb_1_2017.Rdata")
+View(dat)
+View(dat)
+print(x)
+source('D:/Pinsky Lab/Project Velocity/project_velocity-master/test_code/test_code_1.R')
+source('D:/Pinsky Lab/Project Velocity/project_velocity-master/test_code/test_code_1.R')
+source('D:/Pinsky Lab/Project Velocity/project_velocity-master/test_code/test_code_1.R')
+load("D:/Pinsky Lab/Project Velocity/project_velocity-master/data/dat_selectedspp_Feb_1_2017.Rdata")
+load("D:/Pinsky Lab/Project Velocity/project_velocity-master/data/dat_selectedspp_Feb_1_2017.Rdata")
+help(save)
+help("head")
+help(table)
+install.packages('gamair')
+View(hauls)
+dat$sppocean=='centropristis striata_Atl'
+data_black_sea_bass <- dat[dat$sppocean=='centropristis striata_Atl']
+data_black_sea_bass <- dat[dat$sppocean=='centropristis striata_Atl',]
+View(data_black_sea_bass)
+bsb_filter <- function(x) startsWith(x, "centropristis striata")
+data_black_sea_bass_2 <- dat[apply(dat$sppocean,2,FUN=bsb_filter),]
+data_black_sea_bass_2 <- dat[sapply(dat$sppocean,bsb_filter),]
+source('D:/Pinsky Lab/Project Velocity/project_velocity-master/6_ver_1_model_fitting_loop_black_sea_bass.R', encoding = 'UTF-8')
+source('D:/Pinsky Lab/Project Velocity/project_velocity-master/6_ver_1_model_fitting_loop_black_sea_bass.R', encoding = 'UTF-8')
+source('D:/Pinsky Lab/Project Velocity/project_velocity-master/6_ver_1_model_fitting_loop_black_sea_bass.R', encoding = 'UTF-8')
+source('D:/Pinsky Lab/Project Velocity/project_velocity-master/6_ver_1_model_fitting_loop_black_sea_bass.R', encoding = 'UTF-8')
+as.character('Jeewantha')
+df_1 = data.frame(name_f=c('Jeewantha','Vinuri'))
+as.character(df_1$name_f)
+as.character(df_1$name_f)[0]
+as.character(df_1$name_f)[1]
+as.character(df_1$name_f)[2]
+df_2 = data.frame(name_l=c('Vinuri','Jeewantha'))
+as.character(df_1$name_f) == df_2$name_l
+as.character(df_1$name_f) == as.character(df_2$name_l)
+df_2 = data.frame(name_l=c('Jeewantha','Vinuri'))
+as.character(df_1$name_f) == as.character(df_2$name_l)
+as.character(df_1$name_f) == 'Jeewantha'
+table_1 <- table(df_2$name_l)
+table_1
+names(table_1)
+names(table_1)[1]
+as.character(df_2$name_f)==names(table_1)[1]
+as.character(df_1$name_f) == names(table_1) [1]
+as.character(df_1$name_f) == names(table_1)[1]
+install.packages(c("geosphere", "maps"))
+source('D:/Pinsky Lab/Project Velocity/project_velocity-master/6_ver_2_obs_only_black_sea_bass.R')

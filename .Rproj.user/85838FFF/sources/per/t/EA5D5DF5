@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1566412601814.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3342861840",
+    "id" : "EA5D5DF5",
+    "lastKnownWriteTime" : 1563556418,
+    "last_content_update" : 1563556418,
+    "path" : "D:/Pinsky Lab/Project Velocity/project_velocity-master/1_data_allcombine.r",
+    "project_path" : "1_data_allcombine.r",
+    "properties" : {
+        "cursorPosition" : "18,0",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1572373492833.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3522268205",
+    "id" : "7A9BE590",
+    "lastKnownWriteTime" : 1570315974,
+    "last_content_update" : 1570315974,
+    "path" : "~/Graduate Studies/Pinsky Lab/Project Velocity/project_velocity-master/1.5_merge_hadl_noaa_sst.r",
+    "project_path" : "1.5_merge_hadl_noaa_sst.r",
+    "properties" : {
+        "cursorPosition" : "26,0",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
