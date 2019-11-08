@@ -1,7 +1,7 @@
 gis/*
 figures/*
 test_code/*
-6*.R
+6_model_fitting_loop.R
 *.gz
 *.nc
 *.txt
