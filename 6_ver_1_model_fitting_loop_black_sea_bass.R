@@ -570,6 +570,7 @@ for(i in 1:length(allspp)){
   }
   
   # This is the third page in the PDF
+  # Page 3, Figure 1
   plot(wtcpue~preds, ylab='observed cpue', xlab='predicted cpue', main='Full Model_Obs. vs pred. (no smear)', data=test)
   mtext(paste('Median diff=', summary(test$preds - test$wtcpue)[3], sep=''), side=3, line=-1.5)
   mtext(paste('Mean diff=', summary(test$preds - test$wtcpue)[4], sep=''), side=3, line=-3)
@@ -594,14 +595,17 @@ for(i in 1:length(allspp)){
   presr2kap <-round(cor(stack(as.data.frame(t2))[,1],stack(as.data.frame(t1b))[,1],use="p")^2,2)
   abunr2<-round(cor(stack(as.data.frame(t4))[,1],stack(as.data.frame(t3))[,1],use="p")^2,2)
   
+  # Page 3, Figure 2
   plot(stack(as.data.frame(t2))[,1],stack(as.data.frame(t1))[,1],xlab="Proportion of hauls with species present (by year and survey)",ylab="Predicted proportion of cells with presences", cex=0.5,main='Full PA mod_survey/year means (black/prev; red/kappa')
   points(stack(as.data.frame(t2))[,1],stack(as.data.frame(t1b))[,1],cex=0.5,col='red')
   mtext(paste("r^2 =",presr2), side=3, line=-1.5)
   mtext(paste("r^2 =",presr2kap), side=3, line=-2.5)
+  # Page 3, Figure 3
   plot(stack(as.data.frame(t4))[,1],(stack(as.data.frame(t3))[,1]),xlab="Average wtcpue (by year and survey)",ylab="Average predicted wtcpue", cex=0.5,main='Full model predictions_survey/year means')
   mtext(paste("r^2 =",abunr2), side=3, line=-1.5)
   
   if(fittrain){
+    # Page 3, Figure 4
     plot(spdata$wtcpue[testinds]~predstt, ylab='observed cpue', xlab='predicted cpue (test data set)', main='Predictions from training model')
     mtext(paste('r2=', round(cor(predstt, spdata$wtcpue[testinds], use='complete.obs')^2, digits=3)), side=3, line=-1.5)
     
@@ -620,6 +624,7 @@ for(i in 1:length(allspp)){
     modeldiag$prev.pred.prev[i] = mean(stack(as.data.frame(t1))[,1], na.rm=T)
     modeldiag$prev.pred.kap[i] = mean(stack(as.data.frame(t1b))[,1], na.rm=T)
     
+    # Page 3, Figure 5
     plot(stack(as.data.frame(t2))[,1],stack(as.data.frame(t1))[,1],xlab="Proportion of hauls with species present (by year and survey)",ylab="Predicted proportion of cells with presences", cex=0.5,main='Testing PA mod_survey/year means (black/prev; red/kappa')
     points(stack(as.data.frame(t2))[,1],stack(as.data.frame(t1b))[,1], cex=0.5,col='red') 
     mtext(paste("r^2 =",presrTTr2), side=3, line=-1.5)
@@ -627,6 +632,7 @@ for(i in 1:length(allspp)){
     modeldiag$r2.predPATT.surv_year[i]<-presrTTr2
     modeldiag$r2.predPATTkap.surv_year[i]<-presrTTr2Kap
     
+    # Page 3, Figure 6
     plot(stack(as.data.frame(t4))[,1],(stack(as.data.frame(t3))[,1]),xlab="Average wtcpue (by year and survey)",ylab="Average predicted wtcpue", cex=0.5,main='Training/testing model_survey/year means')
     mtext(paste("r^2 =", abundTTr2), side=3, line=-1.5)
     modeldiag$r2.predTT.surv_year[i]<-abundTTr2
