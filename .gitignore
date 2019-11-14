@@ -1,4 +1,5 @@
-gis/*
+gis/10m_physical/*
+gis/black*
 figures/*
 test_code/*
 6_model_fitting_loop.R
