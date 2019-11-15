@@ -1512,7 +1512,7 @@
         <LabelFont style="" description=".AppleSystemUIFont,16,-1,5,50,0,0,0,0,0"/>
         <FontColor green="0" blue="0" red="0" alpha="255"/>
       </LayoutItem>
-      <LayoutItem visibility="1" templateUuid="{18858216-8113-40a8-bbaf-6f61863ced3f}" id="" position="113.9,16.2553,mm" valign="32" frameJoinStyle="miter" opacity="1" marginX="0" groupUuid="" blendMode="0" htmlState="0" labelText="n = 793" size="23.9049,10.9307,mm" marginY="0" zValue="6" excludeFromExports="0" positionOnPage="113.9,16.2553,mm" itemRotation="0" type="65641" referencePoint="0" background="false" positionLock="false" halign="8" uuid="{18858216-8113-40a8-bbaf-6f61863ced3f}" outlineWidthM="0.3,mm" frame="false">
+      <LayoutItem visibility="1" templateUuid="{18858216-8113-40a8-bbaf-6f61863ced3f}" id="" position="121.399,16.2552,mm" valign="32" frameJoinStyle="miter" opacity="1" marginX="0" groupUuid="" blendMode="0" htmlState="0" labelText="n = 793" size="23.9049,10.9307,mm" marginY="0" zValue="6" excludeFromExports="0" positionOnPage="121.399,16.2552,mm" itemRotation="0" type="65641" referencePoint="0" background="false" positionLock="false" halign="8" uuid="{18858216-8113-40a8-bbaf-6f61863ced3f}" outlineWidthM="0.3,mm" frame="false">
         <FrameColor green="0" blue="0" red="0" alpha="255"/>
         <BackgroundColor green="255" blue="255" red="255" alpha="255"/>
         <LayoutObject>

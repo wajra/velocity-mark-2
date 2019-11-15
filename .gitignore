@@ -1,4 +1,6 @@
 gis/10m_physical/*
+gis/black_sea_bass_observations.csv
+gis/black_sea_bass.qgs
 figures/*
 test_code/*
 6_model_fitting_loop.R
