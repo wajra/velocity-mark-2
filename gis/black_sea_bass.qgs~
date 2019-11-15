@@ -1,0 +1,3097 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis projectname="" version="3.4.12-Madeira">
+  <homePath path=""/>
+  <title></title>
+  <autotransaction active="0"/>
+  <evaluateDefaultValues active="0"/>
+  <trust active="0"/>
+  <projectCrs>
+    <spatialrefsys>
+      <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+      <srsid>3452</srsid>
+      <srid>4326</srid>
+      <authid>EPSG:4326</authid>
+      <description>WGS 84</description>
+      <projectionacronym>longlat</projectionacronym>
+      <ellipsoidacronym>WGS84</ellipsoidacronym>
+      <geographicflag>true</geographicflag>
+    </spatialrefsys>
+  </projectCrs>
+  <layer-tree-group>
+    <customproperties/>
+    <layer-tree-layer id="black_sea_bass_observations_54ae270b_0cb1_4afc_beeb_ad4ed16edb7a" providerKey="delimitedtext" source="file:///Users/jeewantha/Graduate%20Studies/Pinsky%20Lab/Project%20Velocity/project_velocity-master/gis/black_sea_bass_observations.csv?type=csv&amp;detectTypes=yes&amp;xField=lon&amp;yField=lat&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no" expanded="1" name="black_sea_bass_observations" checked="Qt::Checked">
+      <customproperties>
+        <property key="legend/title-label" value="black sea bass observations"/>
+      </customproperties>
+    </layer-tree-layer>
+    <layer-tree-layer id="ne_10m_land_89fee001_3b9e_479b_a024_70499aed86d5" providerKey="ogr" source="./10m_physical/ne_10m_land.shp" expanded="1" name="ne_10m_land" checked="Qt::Checked">
+      <customproperties>
+        <property key="legend/title-label" value="Land"/>
+      </customproperties>
+    </layer-tree-layer>
+    <custom-order enabled="0">
+      <item>ne_10m_land_89fee001_3b9e_479b_a024_70499aed86d5</item>
+      <item>black_sea_bass_observations_54ae270b_0cb1_4afc_beeb_ad4ed16edb7a</item>
+    </custom-order>
+  </layer-tree-group>
+  <snapping-settings unit="2" mode="1" type="1" enabled="0" tolerance="0" intersection-snapping="0">
+    <individual-layer-settings>
+      <layer-setting id="ne_10m_land_89fee001_3b9e_479b_a024_70499aed86d5" units="1" type="1" enabled="0" tolerance="12"/>
+      <layer-setting id="black_sea_bass_observations_54ae270b_0cb1_4afc_beeb_ad4ed16edb7a" units="1" type="1" enabled="0" tolerance="12"/>
+    </individual-layer-settings>
+  </snapping-settings>
+  <relations/>
+  <mapcanvas annotationsVisible="1" name="theMapCanvas">
+    <units>degrees</units>
+    <extent>
+      <xmin>-156.60859455668219198</xmin>
+      <ymin>4.91672688072311814</ymin>
+      <xmax>-44.70843980386518979</xmax>
+      <ymax>78.83242522298777999</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+        <srsid>3452</srsid>
+        <srid>4326</srid>
+        <authid>EPSG:4326</authid>
+        <description>WGS 84</description>
+        <projectionacronym>longlat</projectionacronym>
+        <ellipsoidacronym>WGS84</ellipsoidacronym>
+        <geographicflag>true</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+  </mapcanvas>
+  <projectModels/>
+  <legend updateDrawingOrder="true">
+    <legendlayer open="true" drawingOrder="-1" showFeatureCount="0" checked="Qt::Checked" name="black_sea_bass_observations">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" visible="1" layerid="black_sea_bass_observations_54ae270b_0cb1_4afc_beeb_ad4ed16edb7a"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer open="true" drawingOrder="-1" showFeatureCount="0" checked="Qt::Checked" name="ne_10m_land">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" visible="1" layerid="ne_10m_land_89fee001_3b9e_479b_a024_70499aed86d5"/>
+      </filegroup>
+    </legendlayer>
+  </legend>
+  <mapViewDocks/>
+  <mapViewDocks3D/>
+  <projectlayers>
+    <maplayer geometry="Point" simplifyAlgorithm="0" autoRefreshTime="0" minScale="1e+08" readOnly="0" simplifyDrawingTol="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" labelsEnabled="0" type="vector" autoRefreshEnabled="0" refreshOnNotifyEnabled="0" maxScale="0" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" simplifyLocal="1" refreshOnNotifyMessage="">
+      <extent>
+        <xmin>-91.31933333333330438</xmin>
+        <ymin>26.50133333333329944</ymin>
+        <xmax>-67.20700999999999681</xmax>
+        <ymax>44.22876300000000072</ymax>
+      </extent>
+      <id>black_sea_bass_observations_54ae270b_0cb1_4afc_beeb_ad4ed16edb7a</id>
+      <datasource>file:./black_sea_bass_observations.csv?type=csv&amp;detectTypes=yes&amp;xField=lon&amp;yField=lat&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>black_sea_bass_observations</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="UTF-8">delimitedtext</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <legend type="default-vector"/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <renderer-v2 enableorderby="0" type="RuleRenderer" forceraster="0" symbollevels="0">
+        <rules key="{592119c4-92d3-4060-85ff-705a3778462f}">
+          <rule key="{8650214c-9bf0-475f-8c09-7d3295f398bd}" label="1980 - Present" symbol="0" checkstate="0" filter="year > 1980"/>
+          <rule key="{64a744fe-f3f4-4a26-9ec1-3c613c9b02ed}" label="1963 - 1980" symbol="1" checkstate="0" filter="year >= 1963 and year &lt;=1980"/>
+        </rules>
+        <symbols>
+          <symbol type="marker" force_rhr="0" clip_to_extent="1" name="0" alpha="1">
+            <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
+              <prop v="0" k="angle"/>
+              <prop v="0,0,0,255" k="color"/>
+              <prop v="1" k="horizontal_anchor_point"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="circle" k="name"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="123,130,134,0" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0.4" k="outline_width"/>
+              <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="diameter" k="scale_method"/>
+              <prop v="1.6" k="size"/>
+              <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+              <prop v="MM" k="size_unit"/>
+              <prop v="1" k="vertical_anchor_point"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" name="name" value=""/>
+                  <Option name="properties"/>
+                  <Option type="QString" name="type" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol type="marker" force_rhr="0" clip_to_extent="1" name="1" alpha="1">
+            <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
+              <prop v="0" k="angle"/>
+              <prop v="227,26,28,255" k="color"/>
+              <prop v="1" k="horizontal_anchor_point"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="circle" k="name"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="0,0,0,0" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0.4" k="outline_width"/>
+              <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="diameter" k="scale_method"/>
+              <prop v="1.6" k="size"/>
+              <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+              <prop v="MM" k="size_unit"/>
+              <prop v="1" k="vertical_anchor_point"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" name="name" value=""/>
+                  <Option name="properties"/>
+                  <Option type="QString" name="type" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+      </renderer-v2>
+      <customproperties>
+        <property key="dualview/previewExpressions" value="&quot;haulid&quot;"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks type="StringList">
+          <Option type="QString" value=""/>
+        </activeChecks>
+        <checkConfiguration/>
+      </geometryOptions>
+      <fieldConfiguration>
+        <field name="field_1">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="haulid">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="region">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="year">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="yearsurv">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="month">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="stratum">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="lat">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="lon">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="depth">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="bottemp">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="surftemp_orig">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="adjSST">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="surftemp">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="sppocean">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Freq">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="wtcpue">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias index="0" field="field_1" name=""/>
+        <alias index="1" field="haulid" name=""/>
+        <alias index="2" field="region" name=""/>
+        <alias index="3" field="year" name=""/>
+        <alias index="4" field="yearsurv" name=""/>
+        <alias index="5" field="month" name=""/>
+        <alias index="6" field="stratum" name=""/>
+        <alias index="7" field="lat" name=""/>
+        <alias index="8" field="lon" name=""/>
+        <alias index="9" field="depth" name=""/>
+        <alias index="10" field="bottemp" name=""/>
+        <alias index="11" field="surftemp_orig" name=""/>
+        <alias index="12" field="adjSST" name=""/>
+        <alias index="13" field="surftemp" name=""/>
+        <alias index="14" field="sppocean" name=""/>
+        <alias index="15" field="Freq" name=""/>
+        <alias index="16" field="wtcpue" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default expression="" field="field_1" applyOnUpdate="0"/>
+        <default expression="" field="haulid" applyOnUpdate="0"/>
+        <default expression="" field="region" applyOnUpdate="0"/>
+        <default expression="" field="year" applyOnUpdate="0"/>
+        <default expression="" field="yearsurv" applyOnUpdate="0"/>
+        <default expression="" field="month" applyOnUpdate="0"/>
+        <default expression="" field="stratum" applyOnUpdate="0"/>
+        <default expression="" field="lat" applyOnUpdate="0"/>
+        <default expression="" field="lon" applyOnUpdate="0"/>
+        <default expression="" field="depth" applyOnUpdate="0"/>
+        <default expression="" field="bottemp" applyOnUpdate="0"/>
+        <default expression="" field="surftemp_orig" applyOnUpdate="0"/>
+        <default expression="" field="adjSST" applyOnUpdate="0"/>
+        <default expression="" field="surftemp" applyOnUpdate="0"/>
+        <default expression="" field="sppocean" applyOnUpdate="0"/>
+        <default expression="" field="Freq" applyOnUpdate="0"/>
+        <default expression="" field="wtcpue" applyOnUpdate="0"/>
+      </defaults>
+      <constraints>
+        <constraint unique_strength="0" notnull_strength="0" field="field_1" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="haulid" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="region" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="year" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="yearsurv" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="month" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="stratum" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="lat" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="lon" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="depth" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="bottemp" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="surftemp_orig" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="adjSST" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="surftemp" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="sppocean" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="Freq" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="wtcpue" exp_strength="0" constraints="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint desc="" field="field_1" exp=""/>
+        <constraint desc="" field="haulid" exp=""/>
+        <constraint desc="" field="region" exp=""/>
+        <constraint desc="" field="year" exp=""/>
+        <constraint desc="" field="yearsurv" exp=""/>
+        <constraint desc="" field="month" exp=""/>
+        <constraint desc="" field="stratum" exp=""/>
+        <constraint desc="" field="lat" exp=""/>
+        <constraint desc="" field="lon" exp=""/>
+        <constraint desc="" field="depth" exp=""/>
+        <constraint desc="" field="bottemp" exp=""/>
+        <constraint desc="" field="surftemp_orig" exp=""/>
+        <constraint desc="" field="adjSST" exp=""/>
+        <constraint desc="" field="surftemp" exp=""/>
+        <constraint desc="" field="sppocean" exp=""/>
+        <constraint desc="" field="Freq" exp=""/>
+        <constraint desc="" field="wtcpue" exp=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="&quot;year&quot;">
+        <columns>
+          <column width="-1" type="field" hidden="0" name="field_1"/>
+          <column width="-1" type="field" hidden="0" name="haulid"/>
+          <column width="-1" type="field" hidden="0" name="region"/>
+          <column width="-1" type="field" hidden="0" name="year"/>
+          <column width="-1" type="field" hidden="0" name="yearsurv"/>
+          <column width="-1" type="field" hidden="0" name="month"/>
+          <column width="-1" type="field" hidden="0" name="stratum"/>
+          <column width="-1" type="field" hidden="0" name="lat"/>
+          <column width="-1" type="field" hidden="0" name="lon"/>
+          <column width="-1" type="field" hidden="0" name="depth"/>
+          <column width="-1" type="field" hidden="0" name="bottemp"/>
+          <column width="-1" type="field" hidden="0" name="surftemp_orig"/>
+          <column width="-1" type="field" hidden="0" name="adjSST"/>
+          <column width="-1" type="field" hidden="0" name="surftemp"/>
+          <column width="-1" type="field" hidden="0" name="sppocean"/>
+          <column width="-1" type="field" hidden="0" name="Freq"/>
+          <column width="-1" type="field" hidden="0" name="wtcpue"/>
+          <column width="-1" type="actions" hidden="1"/>
+        </columns>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <widgets/>
+      <previewExpression>"haulid"</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer geometry="Polygon" simplifyAlgorithm="0" autoRefreshTime="0" minScale="1e+08" readOnly="0" simplifyDrawingTol="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" labelsEnabled="0" type="vector" autoRefreshEnabled="0" refreshOnNotifyEnabled="0" maxScale="0" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" simplifyLocal="1" refreshOnNotifyMessage="">
+      <extent>
+        <xmin>-179.99999999999991473</xmin>
+        <ymin>-89.99999999999994316</ymin>
+        <xmax>180</xmax>
+        <ymax>83.63410065300007545</ymax>
+      </extent>
+      <id>ne_10m_land_89fee001_3b9e_479b_a024_70499aed86d5</id>
+      <datasource>./10m_physical/ne_10m_land.shp</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>ne_10m_land</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <legend type="default-vector"/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <renderer-v2 enableorderby="0" type="singleSymbol" forceraster="0" symbollevels="0">
+        <symbols>
+          <symbol type="fill" force_rhr="0" clip_to_extent="1" name="0" alpha="1">
+            <layer class="SimpleFill" pass="0" enabled="1" locked="0">
+              <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+              <prop v="229,211,201,255" k="color"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="0,0,0,0" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0.26" k="outline_width"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="solid" k="style"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" name="name" value=""/>
+                  <Option name="properties"/>
+                  <Option type="QString" name="type" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks type="StringList">
+          <Option type="QString" value=""/>
+        </activeChecks>
+        <checkConfiguration/>
+      </geometryOptions>
+      <fieldConfiguration>
+        <field name="featurecla">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="scalerank">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="min_zoom">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias index="0" field="featurecla" name=""/>
+        <alias index="1" field="scalerank" name=""/>
+        <alias index="2" field="min_zoom" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default expression="" field="featurecla" applyOnUpdate="0"/>
+        <default expression="" field="scalerank" applyOnUpdate="0"/>
+        <default expression="" field="min_zoom" applyOnUpdate="0"/>
+      </defaults>
+      <constraints>
+        <constraint unique_strength="0" notnull_strength="0" field="featurecla" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="scalerank" exp_strength="0" constraints="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="min_zoom" exp_strength="0" constraints="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint desc="" field="featurecla" exp=""/>
+        <constraint desc="" field="scalerank" exp=""/>
+        <constraint desc="" field="min_zoom" exp=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+        <columns/>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <widgets/>
+      <previewExpression></previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+  </projectlayers>
+  <layerorder>
+    <layer id="ne_10m_land_89fee001_3b9e_479b_a024_70499aed86d5"/>
+    <layer id="black_sea_bass_observations_54ae270b_0cb1_4afc_beeb_ad4ed16edb7a"/>
+  </layerorder>
+  <properties>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <Measurement>
+      <AreaUnits type="QString">m2</AreaUnits>
+      <DistanceUnits type="QString">meters</DistanceUnits>
+    </Measurement>
+    <Gui>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+    </Gui>
+    <PAL>
+      <CandidatesPolygon type="int">30</CandidatesPolygon>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <CandidatesLine type="int">50</CandidatesLine>
+      <CandidatesPoint type="int">16</CandidatesPoint>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <SearchMethod type="int">0</SearchMethod>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <TextFormat type="int">0</TextFormat>
+    </PAL>
+    <Measure>
+      <Ellipsoid type="QString">WGS84</Ellipsoid>
+    </Measure>
+    <Digitizing>
+      <DefaultSnapTolerance type="double">0</DefaultSnapTolerance>
+      <DefaultSnapToleranceUnit type="int">2</DefaultSnapToleranceUnit>
+      <SnappingMode type="QString">current_layer</SnappingMode>
+      <DefaultSnapType type="QString">off</DefaultSnapType>
+    </Digitizing>
+    <SpatialRefSys>
+      <ProjectCRSID type="int">3452</ProjectCRSID>
+      <ProjectCRSProj4String type="QString">+proj=longlat +datum=WGS84 +no_defs</ProjectCRSProj4String>
+      <ProjectCrs type="QString">EPSG:4326</ProjectCrs>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <Layouts>
+      <lastLayoutExportDir type="QString">/Users/jeewantha/Graduate Studies/Pinsky Lab/Project Velocity/project_velocity-master/gis/maps/sea_ bass_observations_pre_vs_post_1980.png</lastLayoutExportDir>
+    </Layouts>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+    <PositionPrecision>
+      <Automatic type="bool">true</Automatic>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+    </PositionPrecision>
+  </properties>
+  <visibility-presets/>
+  <transformContext/>
+  <projectMetadata>
+    <identifier></identifier>
+    <parentidentifier></parentidentifier>
+    <language></language>
+    <type></type>
+    <title></title>
+    <abstract></abstract>
+    <links/>
+    <author></author>
+    <creation></creation>
+  </projectMetadata>
+  <Annotations/>
+  <Layouts>
+    <Layout printResolution="300" units="mm" worldFileMap="{af6ea493-4098-4113-93a5-d7ea302d5b74}" name="sea_bass_observations">
+      <Snapper snapToGuides="1" snapToItems="1" tolerance="5" snapToGrid="0"/>
+      <Grid offsetY="0" offsetUnits="mm" resUnits="mm" offsetX="0" resolution="10"/>
+      <PageCollection>
+        <symbol type="fill" force_rhr="0" clip_to_extent="1" name="" alpha="1">
+          <layer class="SimpleFill" pass="0" enabled="1" locked="0">
+            <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+            <prop v="255,255,255,255" k="color"/>
+            <prop v="miter" k="joinstyle"/>
+            <prop v="0,0" k="offset"/>
+            <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+            <prop v="MM" k="offset_unit"/>
+            <prop v="35,35,35,255" k="outline_color"/>
+            <prop v="no" k="outline_style"/>
+            <prop v="0.26" k="outline_width"/>
+            <prop v="MM" k="outline_width_unit"/>
+            <prop v="solid" k="style"/>
+            <data_defined_properties>
+              <Option type="Map">
+                <Option type="QString" name="name" value=""/>
+                <Option name="properties"/>
+                <Option type="QString" name="type" value="collection"/>
+              </Option>
+            </data_defined_properties>
+          </layer>
+        </symbol>
+        <LayoutItem visibility="1" templateUuid="{9684497c-227f-4798-b1ef-cde471273577}" id="" position="0,0,mm" frameJoinStyle="miter" opacity="1" groupUuid="" blendMode="0" size="297,210,mm" zValue="0" excludeFromExports="0" positionOnPage="0,0,mm" itemRotation="0" type="65638" referencePoint="0" background="true" positionLock="false" uuid="{9684497c-227f-4798-b1ef-cde471273577}" outlineWidthM="0.3,mm" frame="false">
+          <FrameColor green="0" blue="0" red="0" alpha="255"/>
+          <BackgroundColor green="255" blue="255" red="255" alpha="255"/>
+          <LayoutObject>
+            <dataDefinedProperties>
+              <Option type="Map">
+                <Option type="QString" name="name" value=""/>
+                <Option name="properties"/>
+                <Option type="QString" name="type" value="collection"/>
+              </Option>
+            </dataDefinedProperties>
+            <customproperties/>
+          </LayoutObject>
+        </LayoutItem>
+        <GuideCollection visible="1"/>
+      </PageCollection>
+      <LayoutItem visibility="1" templateUuid="{7267f668-62d6-4cd0-a005-ae7862a92e44}" id="" position="23.9049,21.0925,mm" frameJoinStyle="miter" followPreset="false" opacity="1" groupUuid="" mapRotation="0" blendMode="0" size="74.9957,47.8098,mm" followPresetName="" zValue="4" excludeFromExports="0" positionOnPage="23.9049,21.0925,mm" itemRotation="0" drawCanvasItems="true" type="65639" referencePoint="0" background="true" positionLock="false" uuid="{7267f668-62d6-4cd0-a005-ae7862a92e44}" keepLayerSet="true" outlineWidthM="0.3,mm" frame="true">
+        <FrameColor green="0" blue="0" red="0" alpha="255"/>
+        <BackgroundColor green="255" blue="255" red="255" alpha="255"/>
+        <LayoutObject>
+          <dataDefinedProperties>
+            <Option type="Map">
+              <Option type="QString" name="name" value=""/>
+              <Option name="properties"/>
+              <Option type="QString" name="type" value="collection"/>
+            </Option>
+          </dataDefinedProperties>
+          <customproperties/>
+        </LayoutObject>
+        <Extent ymax="77.54275037931586212" xmin="-156.60859455668219198" ymin="6.20640172439503601" xmax="-44.70843980386518979"/>
+        <LayerSet>
+          <Layer source="/Users/jeewantha/Graduate Studies/Pinsky Lab/Project Velocity/project_velocity-master/gis/10m_physical/ne_10m_land.shp" provider="ogr" name="ne_10m_land">ne_10m_land_89fee001_3b9e_479b_a024_70499aed86d5</Layer>
+        </LayerSet>
+        <LayerStyles>
+          <LayerStyle source="/Users/jeewantha/Graduate Studies/Pinsky Lab/Project Velocity/project_velocity-master/gis/10m_physical/ne_10m_land.shp" provider="ogr" layerid="ne_10m_land_89fee001_3b9e_479b_a024_70499aed86d5" name="ne_10m_land">
+            <qgis simplifyAlgorithm="0" minScale="1e+08" version="3.4.12-Madeira" readOnly="0" simplifyDrawingTol="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" labelsEnabled="0" maxScale="0" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" simplifyLocal="1">
+              <flags>
+                <Identifiable>1</Identifiable>
+                <Removable>1</Removable>
+                <Searchable>1</Searchable>
+              </flags>
+              <renderer-v2 enableorderby="0" type="singleSymbol" forceraster="0" symbollevels="0">
+                <symbols>
+                  <symbol type="fill" force_rhr="0" clip_to_extent="1" alpha="1" name="0">
+                    <layer class="SimpleFill" pass="0" enabled="1" locked="0">
+                      <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+                      <prop v="229,211,201,255" k="color"/>
+                      <prop v="bevel" k="joinstyle"/>
+                      <prop v="0,0" k="offset"/>
+                      <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+                      <prop v="MM" k="offset_unit"/>
+                      <prop v="0,0,0,0" k="outline_color"/>
+                      <prop v="solid" k="outline_style"/>
+                      <prop v="0.26" k="outline_width"/>
+                      <prop v="MM" k="outline_width_unit"/>
+                      <prop v="solid" k="style"/>
+                      <data_defined_properties>
+                        <Option type="Map">
+                          <Option type="QString" name="name" value=""/>
+                          <Option name="properties"/>
+                          <Option type="QString" name="type" value="collection"/>
+                        </Option>
+                      </data_defined_properties>
+                    </layer>
+                  </symbol>
+                </symbols>
+                <rotation/>
+                <sizescale/>
+              </renderer-v2>
+              <customproperties/>
+              <blendMode>0</blendMode>
+              <featureBlendMode>0</featureBlendMode>
+              <layerOpacity>1</layerOpacity>
+              <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+                <activeChecks type="StringList">
+                  <Option type="QString" value=""/>
+                </activeChecks>
+                <checkConfiguration/>
+              </geometryOptions>
+              <fieldConfiguration>
+                <field name="featurecla">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="scalerank">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="min_zoom">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+              </fieldConfiguration>
+              <aliases>
+                <alias index="0" field="featurecla" name=""/>
+                <alias index="1" field="scalerank" name=""/>
+                <alias index="2" field="min_zoom" name=""/>
+              </aliases>
+              <excludeAttributesWMS/>
+              <excludeAttributesWFS/>
+              <defaults>
+                <default expression="" field="featurecla" applyOnUpdate="0"/>
+                <default expression="" field="scalerank" applyOnUpdate="0"/>
+                <default expression="" field="min_zoom" applyOnUpdate="0"/>
+              </defaults>
+              <constraints>
+                <constraint unique_strength="0" notnull_strength="0" field="featurecla" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="scalerank" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="min_zoom" exp_strength="0" constraints="0"/>
+              </constraints>
+              <constraintExpressions>
+                <constraint desc="" field="featurecla" exp=""/>
+                <constraint desc="" field="scalerank" exp=""/>
+                <constraint desc="" field="min_zoom" exp=""/>
+              </constraintExpressions>
+              <expressionfields/>
+              <attributeactions>
+                <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+              </attributeactions>
+              <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+                <columns/>
+              </attributetableconfig>
+              <conditionalstyles>
+                <rowstyles/>
+                <fieldstyles/>
+              </conditionalstyles>
+              <editform tolerant="1"/>
+              <editforminit/>
+              <editforminitcodesource>0</editforminitcodesource>
+              <editforminitfilepath/>
+              <editforminitcode><![CDATA[]]></editforminitcode>
+              <featformsuppress>0</featformsuppress>
+              <editorlayout>generatedlayout</editorlayout>
+              <editable/>
+              <labelOnTop/>
+              <widgets/>
+              <previewExpression/>
+              <mapTip/>
+              <layerGeometryType>2</layerGeometryType>
+            </qgis>
+          </LayerStyle>
+        </LayerStyles>
+        <ComposerMapOverview inverted="0" blendMode="0" frameMap="{af6ea493-4098-4113-93a5-d7ea302d5b74}" centered="0" uuid="{2ccd555f-54fa-4678-a003-860feff12238}" show="1" name="Overview 1">
+          <symbol type="fill" force_rhr="0" clip_to_extent="1" name="" alpha="0.235294">
+            <layer class="SimpleFill" pass="0" enabled="1" locked="0">
+              <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+              <prop v="0,0,0,255" k="color"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="no" k="outline_style"/>
+              <prop v="0.26" k="outline_width"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="solid" k="style"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" name="name" value=""/>
+                  <Option name="properties"/>
+                  <Option type="QString" name="type" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </ComposerMapOverview>
+        <AtlasMap margin="0.10000000000000001" atlasDriven="0" scalingMode="2"/>
+      </LayoutItem>
+      <LayoutItem height="3" frameJoinStyle="miter" numMapUnitsPerScaleBarUnit="1" lineJoinStyle="miter" uuid="{0c4c8872-3d6b-4725-beda-7a36b7b88c8b}" unitLabel="km" position="46.7249,181.252,mm" mapUuid="{af6ea493-4098-4113-93a5-d7ea302d5b74}" frame="false" itemRotation="0" numUnitsPerSegment="250" labelBarSpace="3" type="65646" positionLock="false" segmentSizeMode="0" outlineWidth="0.3" positionOnPage="46.7249,181.252,mm" minBarWidth="50" blendMode="0" zValue="3" outlineWidthM="0.3,mm" visibility="1" id="" maxBarWidth="150" groupUuid="" alignment="0" style="Single Box" segmentMillimeters="19.2595" numSegmentsLeft="0" referencePoint="4" boxContentSpace="1" unitType="km" numSegments="2" excludeFromExports="0" size="54.1314,19.2177,mm" background="false" templateUuid="{0c4c8872-3d6b-4725-beda-7a36b7b88c8b}" lineCapStyle="square" opacity="1">
+        <FrameColor green="0" blue="0" red="0" alpha="255"/>
+        <BackgroundColor green="255" blue="255" red="255" alpha="255"/>
+        <LayoutObject>
+          <dataDefinedProperties>
+            <Option type="Map">
+              <Option type="QString" name="name" value=""/>
+              <Option name="properties"/>
+              <Option type="QString" name="type" value="collection"/>
+            </Option>
+          </dataDefinedProperties>
+          <customproperties/>
+        </LayoutObject>
+        <text-style fontLetterSpacing="0" namedStyle="" fontSizeUnit="Point" textColor="0,0,0,255" textOpacity="1" blendMode="0" fontItalic="0" fontStrikeout="0" fontWordSpacing="0" multilineHeight="1" fontFamily=".SF NS Text" fontCapitals="0" fontWeight="50" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontSize="12" fontUnderline="0">
+          <text-buffer bufferSize="1" bufferOpacity="1" bufferBlendMode="0" bufferNoFill="1" bufferColor="255,255,255,255" bufferJoinStyle="128" bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferDraw="0"/>
+          <background shapeSizeY="0" shapeRotation="0" shapeRadiiX="0" shapeDraw="0" shapeSVGFile="" shapeOffsetX="0" shapeRotationType="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthUnit="MM" shapeOpacity="1" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeBorderColor="128,128,128,255" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiY="0" shapeBlendMode="0" shapeOffsetUnit="MM" shapeSizeX="0" shapeJoinStyle="64" shapeFillColor="255,255,255,255" shapeType="0" shapeSizeType="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="MM" shapeBorderWidth="0" shapeSizeUnit="MM" shapeOffsetY="0"/>
+          <shadow shadowOffsetAngle="135" shadowOpacity="0.7" shadowRadiusUnit="MM" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowUnder="0" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadius="1.5" shadowDraw="0" shadowOffsetUnit="MM" shadowScale="100" shadowBlendMode="6" shadowOffsetGlobal="1" shadowColor="0,0,0,255" shadowOffsetDist="1" shadowRadiusAlphaOnly="0"/>
+        </text-style>
+        <fillColor green="0" blue="0" red="0" alpha="255"/>
+        <fillColor2 green="255" blue="255" red="255" alpha="255"/>
+        <strokeColor green="0" blue="0" red="0" alpha="255"/>
+      </LayoutItem>
+      <LayoutItem legendFilterByAtlas="0" frameJoinStyle="miter" columnSpace="2" uuid="{be2f9f70-7a2b-4888-93b8-1a7ac7f886d4}" wmsLegendHeight="25" position="212.332,172.711,mm" fontColor="#000000" rasterBorderColor="0,0,0,255" splitLayer="0" rasterBorder="1" wmsLegendWidth="50" frame="true" titleAlignment="1" itemRotation="0" columnCount="1" type="65642" positionLock="false" positionOnPage="212.332,172.711,mm" equalColumnWidth="0" symbolWidth="7" blendMode="0" zValue="2" wrapChar="" outlineWidthM="0.3,mm" visibility="1" id="" resizeToContents="1" groupUuid="" map_uuid="{af6ea493-4098-4113-93a5-d7ea302d5b74}" referencePoint="0" rasterBorderWidth="0" title="" boxSpace="2" excludeFromExports="0" size="58.6859,31.0594,mm" symbolHeight="4" background="true" templateUuid="{be2f9f70-7a2b-4888-93b8-1a7ac7f886d4}" opacity="1" lineSpacing="1">
+        <FrameColor green="0" blue="0" red="0" alpha="255"/>
+        <BackgroundColor green="255" blue="255" red="255" alpha="255"/>
+        <LayoutObject>
+          <dataDefinedProperties>
+            <Option type="Map">
+              <Option type="QString" name="name" value=""/>
+              <Option name="properties"/>
+              <Option type="QString" name="type" value="collection"/>
+            </Option>
+          </dataDefinedProperties>
+          <customproperties/>
+        </LayoutObject>
+        <styles>
+          <style marginBottom="3.5" name="title">
+            <styleFont style="" description=".SF NS Text,16,-1,5,50,0,0,0,0,0"/>
+          </style>
+          <style name="group" marginTop="3">
+            <styleFont style="" description=".SF NS Text,14,-1,5,50,0,0,0,0,0"/>
+          </style>
+          <style name="subgroup" marginTop="3">
+            <styleFont style="" description=".SF NS Text,12,-1,5,50,0,0,0,0,0"/>
+          </style>
+          <style name="symbol" marginTop="2.5">
+            <styleFont style="" description=".SF NS Text,13,-1,5,50,0,0,0,0,0"/>
+          </style>
+          <style name="symbolLabel" marginTop="2" marginLeft="2">
+            <styleFont style="" description=".SF NS Text,12,-1,5,50,0,0,0,0,0"/>
+          </style>
+        </styles>
+      </LayoutItem>
+      <LayoutItem visibility="1" templateUuid="{af6ea493-4098-4113-93a5-d7ea302d5b74}" id="" position="13.2734,11.021,mm" frameJoinStyle="miter" followPreset="false" opacity="1" groupUuid="" mapRotation="0" blendMode="0" size="270.453,187.958,mm" followPresetName="" zValue="1" excludeFromExports="0" positionOnPage="13.2734,11.021,mm" itemRotation="0" drawCanvasItems="true" type="65639" referencePoint="0" background="true" positionLock="false" uuid="{af6ea493-4098-4113-93a5-d7ea302d5b74}" keepLayerSet="true" outlineWidthM="0.3,mm" frame="true">
+        <FrameColor green="0" blue="0" red="0" alpha="255"/>
+        <BackgroundColor green="255" blue="255" red="255" alpha="255"/>
+        <LayoutObject>
+          <dataDefinedProperties>
+            <Option type="Map">
+              <Option type="QString" name="name" value=""/>
+              <Option name="properties"/>
+              <Option type="QString" name="type" value="collection"/>
+            </Option>
+          </dataDefinedProperties>
+          <customproperties/>
+        </LayoutObject>
+        <Extent ymax="49.04066721261750672" xmin="-96.42672424698548639" ymin="24.83629165743894873" xmax="-61.59898186459639646"/>
+        <LayerSet>
+          <Layer source="file:///Users/jeewantha/Graduate%20Studies/Pinsky%20Lab/Project%20Velocity/project_velocity-master/gis/black_sea_bass_observations.csv?type=csv&amp;detectTypes=yes&amp;xField=lon&amp;yField=lat&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no" provider="delimitedtext" name="black_sea_bass_observations">black_sea_bass_observations_54ae270b_0cb1_4afc_beeb_ad4ed16edb7a</Layer>
+          <Layer source="/Users/jeewantha/Graduate Studies/Pinsky Lab/Project Velocity/project_velocity-master/gis/10m_physical/ne_10m_land.shp" provider="ogr" name="ne_10m_land">ne_10m_land_89fee001_3b9e_479b_a024_70499aed86d5</Layer>
+        </LayerSet>
+        <LayerStyles>
+          <LayerStyle source="file:///Users/jeewantha/Graduate%20Studies/Pinsky%20Lab/Project%20Velocity/project_velocity-master/gis/black_sea_bass_observations.csv?type=csv&amp;detectTypes=yes&amp;xField=lon&amp;yField=lat&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no" provider="delimitedtext" layerid="black_sea_bass_observations_54ae270b_0cb1_4afc_beeb_ad4ed16edb7a" name="black_sea_bass_observations">
+            <qgis simplifyAlgorithm="0" minScale="1e+08" version="3.4.12-Madeira" readOnly="0" simplifyDrawingTol="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" labelsEnabled="0" maxScale="0" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" simplifyLocal="1">
+              <flags>
+                <Identifiable>1</Identifiable>
+                <Removable>1</Removable>
+                <Searchable>1</Searchable>
+              </flags>
+              <renderer-v2 enableorderby="0" type="singleSymbol" forceraster="0" symbollevels="0">
+                <symbols>
+                  <symbol type="marker" force_rhr="0" clip_to_extent="1" alpha="1" name="0">
+                    <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
+                      <prop v="0" k="angle"/>
+                      <prop v="0,0,0,255" k="color"/>
+                      <prop v="1" k="horizontal_anchor_point"/>
+                      <prop v="bevel" k="joinstyle"/>
+                      <prop v="circle" k="name"/>
+                      <prop v="0,0" k="offset"/>
+                      <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+                      <prop v="MM" k="offset_unit"/>
+                      <prop v="0,0,0,255" k="outline_color"/>
+                      <prop v="solid" k="outline_style"/>
+                      <prop v="0.4" k="outline_width"/>
+                      <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+                      <prop v="MM" k="outline_width_unit"/>
+                      <prop v="diameter" k="scale_method"/>
+                      <prop v="0.8" k="size"/>
+                      <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+                      <prop v="MM" k="size_unit"/>
+                      <prop v="1" k="vertical_anchor_point"/>
+                      <data_defined_properties>
+                        <Option type="Map">
+                          <Option type="QString" name="name" value=""/>
+                          <Option name="properties"/>
+                          <Option type="QString" name="type" value="collection"/>
+                        </Option>
+                      </data_defined_properties>
+                    </layer>
+                  </symbol>
+                </symbols>
+                <rotation/>
+                <sizescale/>
+              </renderer-v2>
+              <customproperties/>
+              <blendMode>0</blendMode>
+              <featureBlendMode>0</featureBlendMode>
+              <layerOpacity>1</layerOpacity>
+              <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+                <activeChecks type="StringList">
+                  <Option type="QString" value=""/>
+                </activeChecks>
+                <checkConfiguration/>
+              </geometryOptions>
+              <fieldConfiguration>
+                <field name="field_1">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="haulid">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="region">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="year">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="yearsurv">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="month">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="stratum">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="lat">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="lon">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="depth">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="bottemp">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="surftemp_orig">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="adjSST">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="surftemp">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="sppocean">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="Freq">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="wtcpue">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+              </fieldConfiguration>
+              <aliases>
+                <alias index="0" field="field_1" name=""/>
+                <alias index="1" field="haulid" name=""/>
+                <alias index="2" field="region" name=""/>
+                <alias index="3" field="year" name=""/>
+                <alias index="4" field="yearsurv" name=""/>
+                <alias index="5" field="month" name=""/>
+                <alias index="6" field="stratum" name=""/>
+                <alias index="7" field="lat" name=""/>
+                <alias index="8" field="lon" name=""/>
+                <alias index="9" field="depth" name=""/>
+                <alias index="10" field="bottemp" name=""/>
+                <alias index="11" field="surftemp_orig" name=""/>
+                <alias index="12" field="adjSST" name=""/>
+                <alias index="13" field="surftemp" name=""/>
+                <alias index="14" field="sppocean" name=""/>
+                <alias index="15" field="Freq" name=""/>
+                <alias index="16" field="wtcpue" name=""/>
+              </aliases>
+              <excludeAttributesWMS/>
+              <excludeAttributesWFS/>
+              <defaults>
+                <default expression="" field="field_1" applyOnUpdate="0"/>
+                <default expression="" field="haulid" applyOnUpdate="0"/>
+                <default expression="" field="region" applyOnUpdate="0"/>
+                <default expression="" field="year" applyOnUpdate="0"/>
+                <default expression="" field="yearsurv" applyOnUpdate="0"/>
+                <default expression="" field="month" applyOnUpdate="0"/>
+                <default expression="" field="stratum" applyOnUpdate="0"/>
+                <default expression="" field="lat" applyOnUpdate="0"/>
+                <default expression="" field="lon" applyOnUpdate="0"/>
+                <default expression="" field="depth" applyOnUpdate="0"/>
+                <default expression="" field="bottemp" applyOnUpdate="0"/>
+                <default expression="" field="surftemp_orig" applyOnUpdate="0"/>
+                <default expression="" field="adjSST" applyOnUpdate="0"/>
+                <default expression="" field="surftemp" applyOnUpdate="0"/>
+                <default expression="" field="sppocean" applyOnUpdate="0"/>
+                <default expression="" field="Freq" applyOnUpdate="0"/>
+                <default expression="" field="wtcpue" applyOnUpdate="0"/>
+              </defaults>
+              <constraints>
+                <constraint unique_strength="0" notnull_strength="0" field="field_1" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="haulid" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="region" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="year" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="yearsurv" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="month" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="stratum" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="lat" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="lon" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="depth" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="bottemp" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="surftemp_orig" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="adjSST" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="surftemp" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="sppocean" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="Freq" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="wtcpue" exp_strength="0" constraints="0"/>
+              </constraints>
+              <constraintExpressions>
+                <constraint desc="" field="field_1" exp=""/>
+                <constraint desc="" field="haulid" exp=""/>
+                <constraint desc="" field="region" exp=""/>
+                <constraint desc="" field="year" exp=""/>
+                <constraint desc="" field="yearsurv" exp=""/>
+                <constraint desc="" field="month" exp=""/>
+                <constraint desc="" field="stratum" exp=""/>
+                <constraint desc="" field="lat" exp=""/>
+                <constraint desc="" field="lon" exp=""/>
+                <constraint desc="" field="depth" exp=""/>
+                <constraint desc="" field="bottemp" exp=""/>
+                <constraint desc="" field="surftemp_orig" exp=""/>
+                <constraint desc="" field="adjSST" exp=""/>
+                <constraint desc="" field="surftemp" exp=""/>
+                <constraint desc="" field="sppocean" exp=""/>
+                <constraint desc="" field="Freq" exp=""/>
+                <constraint desc="" field="wtcpue" exp=""/>
+              </constraintExpressions>
+              <expressionfields/>
+              <attributeactions>
+                <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+              </attributeactions>
+              <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+                <columns/>
+              </attributetableconfig>
+              <conditionalstyles>
+                <rowstyles/>
+                <fieldstyles/>
+              </conditionalstyles>
+              <editform tolerant="1"/>
+              <editforminit/>
+              <editforminitcodesource>0</editforminitcodesource>
+              <editforminitfilepath/>
+              <editforminitcode><![CDATA[]]></editforminitcode>
+              <featformsuppress>0</featformsuppress>
+              <editorlayout>generatedlayout</editorlayout>
+              <editable/>
+              <labelOnTop/>
+              <widgets/>
+              <previewExpression/>
+              <mapTip/>
+              <layerGeometryType>0</layerGeometryType>
+            </qgis>
+          </LayerStyle>
+          <LayerStyle source="/Users/jeewantha/Graduate Studies/Pinsky Lab/Project Velocity/project_velocity-master/gis/10m_physical/ne_10m_land.shp" provider="ogr" layerid="ne_10m_land_89fee001_3b9e_479b_a024_70499aed86d5" name="ne_10m_land">
+            <qgis simplifyAlgorithm="0" minScale="1e+08" version="3.4.12-Madeira" readOnly="0" simplifyDrawingTol="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" labelsEnabled="0" maxScale="0" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" simplifyLocal="1">
+              <flags>
+                <Identifiable>1</Identifiable>
+                <Removable>1</Removable>
+                <Searchable>1</Searchable>
+              </flags>
+              <renderer-v2 enableorderby="0" type="singleSymbol" forceraster="0" symbollevels="0">
+                <symbols>
+                  <symbol type="fill" force_rhr="0" clip_to_extent="1" alpha="1" name="0">
+                    <layer class="SimpleFill" pass="0" enabled="1" locked="0">
+                      <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+                      <prop v="229,211,201,255" k="color"/>
+                      <prop v="bevel" k="joinstyle"/>
+                      <prop v="0,0" k="offset"/>
+                      <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+                      <prop v="MM" k="offset_unit"/>
+                      <prop v="0,0,0,0" k="outline_color"/>
+                      <prop v="solid" k="outline_style"/>
+                      <prop v="0.26" k="outline_width"/>
+                      <prop v="MM" k="outline_width_unit"/>
+                      <prop v="solid" k="style"/>
+                      <data_defined_properties>
+                        <Option type="Map">
+                          <Option type="QString" name="name" value=""/>
+                          <Option name="properties"/>
+                          <Option type="QString" name="type" value="collection"/>
+                        </Option>
+                      </data_defined_properties>
+                    </layer>
+                  </symbol>
+                </symbols>
+                <rotation/>
+                <sizescale/>
+              </renderer-v2>
+              <customproperties/>
+              <blendMode>0</blendMode>
+              <featureBlendMode>0</featureBlendMode>
+              <layerOpacity>1</layerOpacity>
+              <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+                <activeChecks type="StringList">
+                  <Option type="QString" value=""/>
+                </activeChecks>
+                <checkConfiguration/>
+              </geometryOptions>
+              <fieldConfiguration>
+                <field name="featurecla">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="scalerank">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="min_zoom">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+              </fieldConfiguration>
+              <aliases>
+                <alias index="0" field="featurecla" name=""/>
+                <alias index="1" field="scalerank" name=""/>
+                <alias index="2" field="min_zoom" name=""/>
+              </aliases>
+              <excludeAttributesWMS/>
+              <excludeAttributesWFS/>
+              <defaults>
+                <default expression="" field="featurecla" applyOnUpdate="0"/>
+                <default expression="" field="scalerank" applyOnUpdate="0"/>
+                <default expression="" field="min_zoom" applyOnUpdate="0"/>
+              </defaults>
+              <constraints>
+                <constraint unique_strength="0" notnull_strength="0" field="featurecla" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="scalerank" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="min_zoom" exp_strength="0" constraints="0"/>
+              </constraints>
+              <constraintExpressions>
+                <constraint desc="" field="featurecla" exp=""/>
+                <constraint desc="" field="scalerank" exp=""/>
+                <constraint desc="" field="min_zoom" exp=""/>
+              </constraintExpressions>
+              <expressionfields/>
+              <attributeactions>
+                <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+              </attributeactions>
+              <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+                <columns/>
+              </attributetableconfig>
+              <conditionalstyles>
+                <rowstyles/>
+                <fieldstyles/>
+              </conditionalstyles>
+              <editform tolerant="1"/>
+              <editforminit/>
+              <editforminitcodesource>0</editforminitcodesource>
+              <editforminitfilepath/>
+              <editforminitcode><![CDATA[]]></editforminitcode>
+              <featformsuppress>0</featformsuppress>
+              <editorlayout>generatedlayout</editorlayout>
+              <editable/>
+              <labelOnTop/>
+              <widgets/>
+              <previewExpression/>
+              <mapTip/>
+              <layerGeometryType>2</layerGeometryType>
+            </qgis>
+          </LayerStyle>
+        </LayerStyles>
+        <ComposerMapGrid rightFrameDivisions="0" gridFrameSideFlags="15" leftAnnotationPosition="1" intervalX="10" uuid="{7971558d-c8ff-4dd4-ad6f-8b4e1895f396}" offsetX="0" rightAnnotationDisplay="0" rightAnnotationPosition="1" unit="0" annotationPrecision="0" bottomAnnotationDirection="0" topAnnotationDirection="0" gridStyle="3" gridFrameWidth="2" offsetY="0" rightAnnotationDirection="0" topAnnotationDisplay="0" gridFramePenColor="0,0,0,255" annotationExpression="" blendMode="0" topFrameDivisions="0" crossLength="3" bottomAnnotationPosition="1" annotationFontColor="0,0,0,255" bottomAnnotationDisplay="0" bottomFrameDivisions="0" name="Grid 1" frameFillColor2="0,0,0,255" showAnnotation="1" frameFillColor1="255,255,255,255" leftAnnotationDirection="0" show="1" leftFrameDivisions="0" gridFramePenThickness="0.29999999999999999" leftAnnotationDisplay="0" topAnnotationPosition="1" gridFrameStyle="2" annotationFormat="4" frameAnnotationDistance="1" intervalY="10">
+          <lineStyle>
+            <symbol type="line" force_rhr="0" clip_to_extent="1" name="" alpha="1">
+              <layer class="SimpleLine" pass="0" enabled="1" locked="0">
+                <prop v="flat" k="capstyle"/>
+                <prop v="5;2" k="customdash"/>
+                <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+                <prop v="MM" k="customdash_unit"/>
+                <prop v="0" k="draw_inside_polygon"/>
+                <prop v="bevel" k="joinstyle"/>
+                <prop v="0,0,0,255" k="line_color"/>
+                <prop v="solid" k="line_style"/>
+                <prop v="0.3" k="line_width"/>
+                <prop v="MM" k="line_width_unit"/>
+                <prop v="0" k="offset"/>
+                <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+                <prop v="MM" k="offset_unit"/>
+                <prop v="0" k="ring_filter"/>
+                <prop v="0" k="use_custom_dash"/>
+                <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+                <data_defined_properties>
+                  <Option type="Map">
+                    <Option type="QString" name="name" value=""/>
+                    <Option name="properties"/>
+                    <Option type="QString" name="type" value="collection"/>
+                  </Option>
+                </data_defined_properties>
+              </layer>
+            </symbol>
+          </lineStyle>
+          <markerStyle>
+            <symbol type="marker" force_rhr="0" clip_to_extent="1" name="" alpha="1">
+              <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
+                <prop v="0" k="angle"/>
+                <prop v="0,0,0,255" k="color"/>
+                <prop v="1" k="horizontal_anchor_point"/>
+                <prop v="bevel" k="joinstyle"/>
+                <prop v="circle" k="name"/>
+                <prop v="0,0" k="offset"/>
+                <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+                <prop v="MM" k="offset_unit"/>
+                <prop v="35,35,35,255" k="outline_color"/>
+                <prop v="solid" k="outline_style"/>
+                <prop v="0" k="outline_width"/>
+                <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+                <prop v="MM" k="outline_width_unit"/>
+                <prop v="diameter" k="scale_method"/>
+                <prop v="2" k="size"/>
+                <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+                <prop v="MM" k="size_unit"/>
+                <prop v="1" k="vertical_anchor_point"/>
+                <data_defined_properties>
+                  <Option type="Map">
+                    <Option type="QString" name="name" value=""/>
+                    <Option name="properties"/>
+                    <Option type="QString" name="type" value="collection"/>
+                  </Option>
+                </data_defined_properties>
+              </layer>
+            </symbol>
+          </markerStyle>
+          <annotationFontProperties style="" description=".SF NS Text,13,-1,5,50,0,0,0,0,0"/>
+        </ComposerMapGrid>
+        <AtlasMap margin="0.10000000000000001" atlasDriven="0" scalingMode="2"/>
+      </LayoutItem>
+      <customproperties>
+        <property key="atlasRasterFormat" value="png"/>
+        <property key="imageAntialias" value="true"/>
+        <property key="imageCropMarginBottom" value="0"/>
+        <property key="imageCropMarginLeft" value="0"/>
+        <property key="imageCropMarginRight" value="0"/>
+        <property key="imageCropMarginTop" value="0"/>
+        <property key="imageCropToContents" value="false"/>
+      </customproperties>
+      <Atlas pageNameExpression="" coverageLayer="" filenamePattern="'output_'||@atlas_featurenumber" filterFeatures="0" sortFeatures="0" enabled="0" hideCoverage="0"/>
+    </Layout>
+    <Layout printResolution="300" units="mm" worldFileMap="{9206a031-06ff-47da-8874-be78b2b8de36}" name="roms_problem">
+      <Snapper snapToGuides="1" snapToItems="1" tolerance="5" snapToGrid="0"/>
+      <Grid offsetY="0" offsetUnits="mm" resUnits="mm" offsetX="0" resolution="10"/>
+      <PageCollection>
+        <symbol type="fill" force_rhr="0" clip_to_extent="1" name="" alpha="1">
+          <layer class="SimpleFill" pass="0" enabled="1" locked="0">
+            <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+            <prop v="255,255,255,255" k="color"/>
+            <prop v="miter" k="joinstyle"/>
+            <prop v="0,0" k="offset"/>
+            <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+            <prop v="MM" k="offset_unit"/>
+            <prop v="35,35,35,255" k="outline_color"/>
+            <prop v="no" k="outline_style"/>
+            <prop v="0.26" k="outline_width"/>
+            <prop v="MM" k="outline_width_unit"/>
+            <prop v="solid" k="style"/>
+            <data_defined_properties>
+              <Option type="Map">
+                <Option type="QString" name="name" value=""/>
+                <Option name="properties"/>
+                <Option type="QString" name="type" value="collection"/>
+              </Option>
+            </data_defined_properties>
+          </layer>
+        </symbol>
+        <LayoutItem visibility="1" templateUuid="{9e0b4293-1792-409d-9df6-46658efcc091}" id="" position="0,0,mm" frameJoinStyle="miter" opacity="1" groupUuid="" blendMode="0" size="297,210,mm" zValue="0" excludeFromExports="0" positionOnPage="0,0,mm" itemRotation="0" type="65638" referencePoint="0" background="true" positionLock="false" uuid="{9e0b4293-1792-409d-9df6-46658efcc091}" outlineWidthM="0.3,mm" frame="false">
+          <FrameColor green="0" blue="0" red="0" alpha="255"/>
+          <BackgroundColor green="255" blue="255" red="255" alpha="255"/>
+          <LayoutObject>
+            <dataDefinedProperties>
+              <Option type="Map">
+                <Option type="QString" name="name" value=""/>
+                <Option name="properties"/>
+                <Option type="QString" name="type" value="collection"/>
+              </Option>
+            </dataDefinedProperties>
+            <customproperties/>
+          </LayoutObject>
+        </LayoutItem>
+        <GuideCollection visible="1"/>
+      </PageCollection>
+      <LayoutItem visibility="1" templateUuid="{1fe675c2-7b88-404f-be64-9ab314ba588d}" id="" position="262.954,16.2552,mm" valign="32" frameJoinStyle="miter" opacity="1" marginX="0" groupUuid="" blendMode="0" htmlState="0" labelText="n = 4612" size="23.9049,10.9307,mm" marginY="0" zValue="12" excludeFromExports="0" positionOnPage="262.954,16.2552,mm" itemRotation="0" type="65641" referencePoint="0" background="false" positionLock="false" halign="8" uuid="{1fe675c2-7b88-404f-be64-9ab314ba588d}" outlineWidthM="0.3,mm" frame="false">
+        <FrameColor green="0" blue="0" red="0" alpha="255"/>
+        <BackgroundColor green="255" blue="255" red="255" alpha="255"/>
+        <LayoutObject>
+          <dataDefinedProperties>
+            <Option type="Map">
+              <Option type="QString" name="name" value=""/>
+              <Option name="properties"/>
+              <Option type="QString" name="type" value="collection"/>
+            </Option>
+          </dataDefinedProperties>
+          <customproperties/>
+        </LayoutObject>
+        <LabelFont style="" description=".AppleSystemUIFont,16,-1,5,50,0,0,0,0,0"/>
+        <FontColor green="0" blue="0" red="0" alpha="255"/>
+      </LayoutItem>
+      <LayoutItem visibility="1" templateUuid="{18858216-8113-40a8-bbaf-6f61863ced3f}" id="" position="113.9,16.2553,mm" valign="32" frameJoinStyle="miter" opacity="1" marginX="0" groupUuid="" blendMode="0" htmlState="0" labelText="n = 793" size="23.9049,10.9307,mm" marginY="0" zValue="6" excludeFromExports="0" positionOnPage="113.9,16.2553,mm" itemRotation="0" type="65641" referencePoint="0" background="false" positionLock="false" halign="8" uuid="{18858216-8113-40a8-bbaf-6f61863ced3f}" outlineWidthM="0.3,mm" frame="false">
+        <FrameColor green="0" blue="0" red="0" alpha="255"/>
+        <BackgroundColor green="255" blue="255" red="255" alpha="255"/>
+        <LayoutObject>
+          <dataDefinedProperties>
+            <Option type="Map">
+              <Option type="QString" name="name" value=""/>
+              <Option name="properties"/>
+              <Option type="QString" name="type" value="collection"/>
+            </Option>
+          </dataDefinedProperties>
+          <customproperties/>
+        </LayoutObject>
+        <LabelFont style="" description=".AppleSystemUIFont,16,-1,5,50,0,0,0,0,0"/>
+        <FontColor green="0" blue="0" red="0" alpha="255"/>
+      </LayoutItem>
+      <LayoutItem legendFilterByAtlas="0" frameJoinStyle="miter" columnSpace="2" uuid="{0c05edf6-5b1d-4643-ae23-3e43d6a44617}" wmsLegendHeight="25" position="220.592,172.16,mm" fontColor="#000000" rasterBorderColor="0,0,0,255" splitLayer="0" rasterBorder="1" wmsLegendWidth="50" frame="true" titleAlignment="1" itemRotation="0" columnCount="1" type="65642" positionLock="false" positionOnPage="220.592,172.16,mm" equalColumnWidth="0" symbolWidth="7" blendMode="0" zValue="5" wrapChar="" outlineWidthM="0.2,mm" visibility="1" id="" resizeToContents="1" groupUuid="" map_uuid="{22a24e08-7f36-4f8f-ba63-0f06fe15b13b}" referencePoint="0" rasterBorderWidth="0" title="" boxSpace="2" excludeFromExports="0" size="68.5844,25.3547,mm" symbolHeight="4" background="true" templateUuid="{0c05edf6-5b1d-4643-ae23-3e43d6a44617}" opacity="1" lineSpacing="1">
+        <FrameColor green="0" blue="0" red="0" alpha="255"/>
+        <BackgroundColor green="255" blue="255" red="255" alpha="255"/>
+        <LayoutObject>
+          <dataDefinedProperties>
+            <Option type="Map">
+              <Option type="QString" name="name" value=""/>
+              <Option name="properties"/>
+              <Option type="QString" name="type" value="collection"/>
+            </Option>
+          </dataDefinedProperties>
+          <customproperties/>
+        </LayoutObject>
+        <styles>
+          <style marginBottom="3.5" name="title">
+            <styleFont style="" description=".AppleSystemUIFont,16,-1,5,50,0,0,0,0,0"/>
+          </style>
+          <style name="group" marginTop="3">
+            <styleFont style="Plain" description="Al Bayan,14,-1,5,50,0,0,0,0,0,Plain"/>
+          </style>
+          <style name="subgroup" marginTop="3">
+            <styleFont style="Plain" description="Al Bayan,14,-1,5,50,0,0,0,0,0,Plain"/>
+          </style>
+          <style name="symbol" marginTop="2.5">
+            <styleFont style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
+          </style>
+          <style name="symbolLabel" marginTop="2" marginLeft="2">
+            <styleFont style="Plain" description="Al Bayan,14,-1,5,50,0,0,0,0,0,Plain"/>
+          </style>
+        </styles>
+        <layer-tree-group>
+          <customproperties/>
+          <layer-tree-layer id="black_sea_bass_observations_54ae270b_0cb1_4afc_beeb_ad4ed16edb7a" providerKey="delimitedtext" source="file:///Users/jeewantha/Graduate%20Studies/Pinsky%20Lab/Project%20Velocity/project_velocity-master/gis/black_sea_bass_observations.csv?type=csv&amp;detectTypes=yes&amp;xField=lon&amp;yField=lat&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no" expanded="1" name="black_sea_bass_observations" checked="Qt::Checked">
+            <customproperties>
+              <property key="legend/label-0" value="1980 - Present "/>
+              <property key="legend/label-1" value="1963 - 1980"/>
+              <property key="legend/title-label" value="black sea bass observations"/>
+            </customproperties>
+          </layer-tree-layer>
+          <custom-order enabled="0">
+            <item>black_sea_bass_observations_54ae270b_0cb1_4afc_beeb_ad4ed16edb7a</item>
+          </custom-order>
+        </layer-tree-group>
+      </LayoutItem>
+      <LayoutItem visibility="1" templateUuid="{22a24e08-7f36-4f8f-ba63-0f06fe15b13b}" id="" position="157.3,10.318,mm" frameJoinStyle="miter" followPreset="false" opacity="1" groupUuid="" mapRotation="0" blendMode="0" size="135.076,189.363,mm" followPresetName="" zValue="5" excludeFromExports="0" positionOnPage="157.3,10.318,mm" itemRotation="0" drawCanvasItems="true" type="65639" referencePoint="0" background="true" positionLock="false" uuid="{22a24e08-7f36-4f8f-ba63-0f06fe15b13b}" keepLayerSet="true" outlineWidthM="0.3,mm" frame="true">
+        <FrameColor green="0" blue="0" red="0" alpha="255"/>
+        <BackgroundColor green="255" blue="255" red="255" alpha="255"/>
+        <LayoutObject>
+          <dataDefinedProperties>
+            <Option type="Map">
+              <Option type="QString" name="name" value=""/>
+              <Option name="properties"/>
+              <Option type="QString" name="type" value="collection"/>
+            </Option>
+          </dataDefinedProperties>
+          <customproperties/>
+        </LayoutObject>
+        <Extent ymax="46.88758888037697403" xmin="-86.25268469434641361" ymin="20.70244252915463079" xmax="-67.5743803867709687"/>
+        <LayerSet>
+          <Layer source="file:///Users/jeewantha/Graduate%20Studies/Pinsky%20Lab/Project%20Velocity/project_velocity-master/gis/black_sea_bass_observations.csv?type=csv&amp;detectTypes=yes&amp;xField=lon&amp;yField=lat&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no" provider="delimitedtext" name="black_sea_bass_observations">black_sea_bass_observations_54ae270b_0cb1_4afc_beeb_ad4ed16edb7a</Layer>
+          <Layer source="/Users/jeewantha/Graduate Studies/Pinsky Lab/Project Velocity/project_velocity-master/gis/10m_physical/ne_10m_land.shp" provider="ogr" name="ne_10m_land">ne_10m_land_89fee001_3b9e_479b_a024_70499aed86d5</Layer>
+        </LayerSet>
+        <LayerStyles>
+          <LayerStyle source="file:///Users/jeewantha/Graduate%20Studies/Pinsky%20Lab/Project%20Velocity/project_velocity-master/gis/black_sea_bass_observations.csv?type=csv&amp;detectTypes=yes&amp;xField=lon&amp;yField=lat&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no" provider="delimitedtext" layerid="black_sea_bass_observations_54ae270b_0cb1_4afc_beeb_ad4ed16edb7a" name="black_sea_bass_observations">
+            <qgis simplifyAlgorithm="0" minScale="1e+08" version="3.4.12-Madeira" readOnly="0" simplifyDrawingTol="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" labelsEnabled="0" maxScale="0" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" simplifyLocal="1">
+              <flags>
+                <Identifiable>1</Identifiable>
+                <Removable>1</Removable>
+                <Searchable>1</Searchable>
+              </flags>
+              <renderer-v2 enableorderby="0" type="RuleRenderer" forceraster="0" symbollevels="0">
+                <rules key="{592119c4-92d3-4060-85ff-705a3778462f}">
+                  <rule key="{8650214c-9bf0-475f-8c09-7d3295f398bd}" label="1980 - Present" symbol="0" filter="year > 1980"/>
+                  <rule key="{64a744fe-f3f4-4a26-9ec1-3c613c9b02ed}" label="1963 - 1980" symbol="1" checkstate="0" filter="year >= 1963 and year &lt;=1980"/>
+                </rules>
+                <symbols>
+                  <symbol type="marker" force_rhr="0" clip_to_extent="1" name="0" alpha="1">
+                    <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
+                      <prop v="0" k="angle"/>
+                      <prop v="0,0,0,255" k="color"/>
+                      <prop v="1" k="horizontal_anchor_point"/>
+                      <prop v="bevel" k="joinstyle"/>
+                      <prop v="circle" k="name"/>
+                      <prop v="0,0" k="offset"/>
+                      <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+                      <prop v="MM" k="offset_unit"/>
+                      <prop v="123,130,134,0" k="outline_color"/>
+                      <prop v="solid" k="outline_style"/>
+                      <prop v="0.4" k="outline_width"/>
+                      <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+                      <prop v="MM" k="outline_width_unit"/>
+                      <prop v="diameter" k="scale_method"/>
+                      <prop v="1.6" k="size"/>
+                      <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+                      <prop v="MM" k="size_unit"/>
+                      <prop v="1" k="vertical_anchor_point"/>
+                      <data_defined_properties>
+                        <Option type="Map">
+                          <Option type="QString" name="name" value=""/>
+                          <Option name="properties"/>
+                          <Option type="QString" name="type" value="collection"/>
+                        </Option>
+                      </data_defined_properties>
+                    </layer>
+                  </symbol>
+                  <symbol type="marker" force_rhr="0" clip_to_extent="1" name="1" alpha="1">
+                    <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
+                      <prop v="0" k="angle"/>
+                      <prop v="227,26,28,255" k="color"/>
+                      <prop v="1" k="horizontal_anchor_point"/>
+                      <prop v="bevel" k="joinstyle"/>
+                      <prop v="circle" k="name"/>
+                      <prop v="0,0" k="offset"/>
+                      <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+                      <prop v="MM" k="offset_unit"/>
+                      <prop v="0,0,0,0" k="outline_color"/>
+                      <prop v="solid" k="outline_style"/>
+                      <prop v="0.4" k="outline_width"/>
+                      <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+                      <prop v="MM" k="outline_width_unit"/>
+                      <prop v="diameter" k="scale_method"/>
+                      <prop v="1.6" k="size"/>
+                      <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+                      <prop v="MM" k="size_unit"/>
+                      <prop v="1" k="vertical_anchor_point"/>
+                      <data_defined_properties>
+                        <Option type="Map">
+                          <Option type="QString" name="name" value=""/>
+                          <Option name="properties"/>
+                          <Option type="QString" name="type" value="collection"/>
+                        </Option>
+                      </data_defined_properties>
+                    </layer>
+                  </symbol>
+                </symbols>
+              </renderer-v2>
+              <customproperties/>
+              <blendMode>0</blendMode>
+              <featureBlendMode>0</featureBlendMode>
+              <layerOpacity>1</layerOpacity>
+              <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+                <activeChecks type="StringList">
+                  <Option type="QString" value=""/>
+                </activeChecks>
+                <checkConfiguration/>
+              </geometryOptions>
+              <fieldConfiguration>
+                <field name="field_1">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="haulid">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="region">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="year">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="yearsurv">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="month">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="stratum">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="lat">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="lon">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="depth">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="bottemp">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="surftemp_orig">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="adjSST">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="surftemp">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="sppocean">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="Freq">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="wtcpue">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+              </fieldConfiguration>
+              <aliases>
+                <alias index="0" field="field_1" name=""/>
+                <alias index="1" field="haulid" name=""/>
+                <alias index="2" field="region" name=""/>
+                <alias index="3" field="year" name=""/>
+                <alias index="4" field="yearsurv" name=""/>
+                <alias index="5" field="month" name=""/>
+                <alias index="6" field="stratum" name=""/>
+                <alias index="7" field="lat" name=""/>
+                <alias index="8" field="lon" name=""/>
+                <alias index="9" field="depth" name=""/>
+                <alias index="10" field="bottemp" name=""/>
+                <alias index="11" field="surftemp_orig" name=""/>
+                <alias index="12" field="adjSST" name=""/>
+                <alias index="13" field="surftemp" name=""/>
+                <alias index="14" field="sppocean" name=""/>
+                <alias index="15" field="Freq" name=""/>
+                <alias index="16" field="wtcpue" name=""/>
+              </aliases>
+              <excludeAttributesWMS/>
+              <excludeAttributesWFS/>
+              <defaults>
+                <default expression="" field="field_1" applyOnUpdate="0"/>
+                <default expression="" field="haulid" applyOnUpdate="0"/>
+                <default expression="" field="region" applyOnUpdate="0"/>
+                <default expression="" field="year" applyOnUpdate="0"/>
+                <default expression="" field="yearsurv" applyOnUpdate="0"/>
+                <default expression="" field="month" applyOnUpdate="0"/>
+                <default expression="" field="stratum" applyOnUpdate="0"/>
+                <default expression="" field="lat" applyOnUpdate="0"/>
+                <default expression="" field="lon" applyOnUpdate="0"/>
+                <default expression="" field="depth" applyOnUpdate="0"/>
+                <default expression="" field="bottemp" applyOnUpdate="0"/>
+                <default expression="" field="surftemp_orig" applyOnUpdate="0"/>
+                <default expression="" field="adjSST" applyOnUpdate="0"/>
+                <default expression="" field="surftemp" applyOnUpdate="0"/>
+                <default expression="" field="sppocean" applyOnUpdate="0"/>
+                <default expression="" field="Freq" applyOnUpdate="0"/>
+                <default expression="" field="wtcpue" applyOnUpdate="0"/>
+              </defaults>
+              <constraints>
+                <constraint unique_strength="0" notnull_strength="0" field="field_1" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="haulid" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="region" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="year" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="yearsurv" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="month" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="stratum" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="lat" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="lon" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="depth" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="bottemp" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="surftemp_orig" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="adjSST" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="surftemp" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="sppocean" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="Freq" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="wtcpue" exp_strength="0" constraints="0"/>
+              </constraints>
+              <constraintExpressions>
+                <constraint desc="" field="field_1" exp=""/>
+                <constraint desc="" field="haulid" exp=""/>
+                <constraint desc="" field="region" exp=""/>
+                <constraint desc="" field="year" exp=""/>
+                <constraint desc="" field="yearsurv" exp=""/>
+                <constraint desc="" field="month" exp=""/>
+                <constraint desc="" field="stratum" exp=""/>
+                <constraint desc="" field="lat" exp=""/>
+                <constraint desc="" field="lon" exp=""/>
+                <constraint desc="" field="depth" exp=""/>
+                <constraint desc="" field="bottemp" exp=""/>
+                <constraint desc="" field="surftemp_orig" exp=""/>
+                <constraint desc="" field="adjSST" exp=""/>
+                <constraint desc="" field="surftemp" exp=""/>
+                <constraint desc="" field="sppocean" exp=""/>
+                <constraint desc="" field="Freq" exp=""/>
+                <constraint desc="" field="wtcpue" exp=""/>
+              </constraintExpressions>
+              <expressionfields/>
+              <attributeactions>
+                <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+              </attributeactions>
+              <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+                <columns/>
+              </attributetableconfig>
+              <conditionalstyles>
+                <rowstyles/>
+                <fieldstyles/>
+              </conditionalstyles>
+              <editform tolerant="1"/>
+              <editforminit/>
+              <editforminitcodesource>0</editforminitcodesource>
+              <editforminitfilepath/>
+              <editforminitcode><![CDATA[]]></editforminitcode>
+              <featformsuppress>0</featformsuppress>
+              <editorlayout>generatedlayout</editorlayout>
+              <editable/>
+              <labelOnTop/>
+              <widgets/>
+              <previewExpression/>
+              <mapTip/>
+              <layerGeometryType>0</layerGeometryType>
+            </qgis>
+          </LayerStyle>
+          <LayerStyle source="/Users/jeewantha/Graduate Studies/Pinsky Lab/Project Velocity/project_velocity-master/gis/10m_physical/ne_10m_land.shp" provider="ogr" layerid="ne_10m_land_89fee001_3b9e_479b_a024_70499aed86d5" name="ne_10m_land">
+            <qgis simplifyAlgorithm="0" minScale="1e+08" version="3.4.12-Madeira" readOnly="0" simplifyDrawingTol="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" labelsEnabled="0" maxScale="0" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" simplifyLocal="1">
+              <flags>
+                <Identifiable>1</Identifiable>
+                <Removable>1</Removable>
+                <Searchable>1</Searchable>
+              </flags>
+              <renderer-v2 enableorderby="0" type="singleSymbol" forceraster="0" symbollevels="0">
+                <symbols>
+                  <symbol type="fill" force_rhr="0" clip_to_extent="1" name="0" alpha="1">
+                    <layer class="SimpleFill" pass="0" enabled="1" locked="0">
+                      <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+                      <prop v="229,211,201,255" k="color"/>
+                      <prop v="bevel" k="joinstyle"/>
+                      <prop v="0,0" k="offset"/>
+                      <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+                      <prop v="MM" k="offset_unit"/>
+                      <prop v="0,0,0,0" k="outline_color"/>
+                      <prop v="solid" k="outline_style"/>
+                      <prop v="0.26" k="outline_width"/>
+                      <prop v="MM" k="outline_width_unit"/>
+                      <prop v="solid" k="style"/>
+                      <data_defined_properties>
+                        <Option type="Map">
+                          <Option type="QString" name="name" value=""/>
+                          <Option name="properties"/>
+                          <Option type="QString" name="type" value="collection"/>
+                        </Option>
+                      </data_defined_properties>
+                    </layer>
+                  </symbol>
+                </symbols>
+                <rotation/>
+                <sizescale/>
+              </renderer-v2>
+              <customproperties/>
+              <blendMode>0</blendMode>
+              <featureBlendMode>0</featureBlendMode>
+              <layerOpacity>1</layerOpacity>
+              <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+                <activeChecks type="StringList">
+                  <Option type="QString" value=""/>
+                </activeChecks>
+                <checkConfiguration/>
+              </geometryOptions>
+              <fieldConfiguration>
+                <field name="featurecla">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="scalerank">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="min_zoom">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+              </fieldConfiguration>
+              <aliases>
+                <alias index="0" field="featurecla" name=""/>
+                <alias index="1" field="scalerank" name=""/>
+                <alias index="2" field="min_zoom" name=""/>
+              </aliases>
+              <excludeAttributesWMS/>
+              <excludeAttributesWFS/>
+              <defaults>
+                <default expression="" field="featurecla" applyOnUpdate="0"/>
+                <default expression="" field="scalerank" applyOnUpdate="0"/>
+                <default expression="" field="min_zoom" applyOnUpdate="0"/>
+              </defaults>
+              <constraints>
+                <constraint unique_strength="0" notnull_strength="0" field="featurecla" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="scalerank" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="min_zoom" exp_strength="0" constraints="0"/>
+              </constraints>
+              <constraintExpressions>
+                <constraint desc="" field="featurecla" exp=""/>
+                <constraint desc="" field="scalerank" exp=""/>
+                <constraint desc="" field="min_zoom" exp=""/>
+              </constraintExpressions>
+              <expressionfields/>
+              <attributeactions>
+                <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+              </attributeactions>
+              <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+                <columns/>
+              </attributetableconfig>
+              <conditionalstyles>
+                <rowstyles/>
+                <fieldstyles/>
+              </conditionalstyles>
+              <editform tolerant="1"/>
+              <editforminit/>
+              <editforminitcodesource>0</editforminitcodesource>
+              <editforminitfilepath/>
+              <editforminitcode><![CDATA[]]></editforminitcode>
+              <featformsuppress>0</featformsuppress>
+              <editorlayout>generatedlayout</editorlayout>
+              <editable/>
+              <labelOnTop/>
+              <widgets/>
+              <previewExpression/>
+              <mapTip/>
+              <layerGeometryType>2</layerGeometryType>
+            </qgis>
+          </LayerStyle>
+        </LayerStyles>
+        <ComposerMapGrid rightFrameDivisions="0" gridFrameSideFlags="14" leftAnnotationPosition="1" intervalX="10" uuid="{7971558d-c8ff-4dd4-ad6f-8b4e1895f396}" offsetX="0" rightAnnotationDisplay="3" rightAnnotationPosition="1" unit="0" annotationPrecision="0" bottomAnnotationDirection="0" topAnnotationDirection="0" gridStyle="3" gridFrameWidth="2" offsetY="0" rightAnnotationDirection="0" topAnnotationDisplay="0" gridFramePenColor="0,0,0,255" annotationExpression="" blendMode="0" topFrameDivisions="0" crossLength="3" bottomAnnotationPosition="1" annotationFontColor="0,0,0,255" bottomAnnotationDisplay="0" bottomFrameDivisions="0" name="Grid 1" frameFillColor2="0,0,0,255" showAnnotation="1" frameFillColor1="255,255,255,255" leftAnnotationDirection="0" show="1" leftFrameDivisions="0" gridFramePenThickness="0.29999999999999999" leftAnnotationDisplay="3" topAnnotationPosition="1" gridFrameStyle="2" annotationFormat="4" frameAnnotationDistance="1" intervalY="10">
+          <lineStyle>
+            <symbol type="line" force_rhr="0" clip_to_extent="1" name="" alpha="1">
+              <layer class="SimpleLine" pass="0" enabled="1" locked="0">
+                <prop v="flat" k="capstyle"/>
+                <prop v="5;2" k="customdash"/>
+                <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+                <prop v="MM" k="customdash_unit"/>
+                <prop v="0" k="draw_inside_polygon"/>
+                <prop v="bevel" k="joinstyle"/>
+                <prop v="0,0,0,255" k="line_color"/>
+                <prop v="solid" k="line_style"/>
+                <prop v="0.3" k="line_width"/>
+                <prop v="MM" k="line_width_unit"/>
+                <prop v="0" k="offset"/>
+                <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+                <prop v="MM" k="offset_unit"/>
+                <prop v="0" k="ring_filter"/>
+                <prop v="0" k="use_custom_dash"/>
+                <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+                <data_defined_properties>
+                  <Option type="Map">
+                    <Option type="QString" name="name" value=""/>
+                    <Option name="properties"/>
+                    <Option type="QString" name="type" value="collection"/>
+                  </Option>
+                </data_defined_properties>
+              </layer>
+            </symbol>
+          </lineStyle>
+          <markerStyle>
+            <symbol type="marker" force_rhr="0" clip_to_extent="1" name="" alpha="1">
+              <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
+                <prop v="0" k="angle"/>
+                <prop v="0,0,0,255" k="color"/>
+                <prop v="1" k="horizontal_anchor_point"/>
+                <prop v="bevel" k="joinstyle"/>
+                <prop v="circle" k="name"/>
+                <prop v="0,0" k="offset"/>
+                <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+                <prop v="MM" k="offset_unit"/>
+                <prop v="35,35,35,255" k="outline_color"/>
+                <prop v="solid" k="outline_style"/>
+                <prop v="0" k="outline_width"/>
+                <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+                <prop v="MM" k="outline_width_unit"/>
+                <prop v="diameter" k="scale_method"/>
+                <prop v="2" k="size"/>
+                <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+                <prop v="MM" k="size_unit"/>
+                <prop v="1" k="vertical_anchor_point"/>
+                <data_defined_properties>
+                  <Option type="Map">
+                    <Option type="QString" name="name" value=""/>
+                    <Option name="properties"/>
+                    <Option type="QString" name="type" value="collection"/>
+                  </Option>
+                </data_defined_properties>
+              </layer>
+            </symbol>
+          </markerStyle>
+          <annotationFontProperties style="" description=".SF NS Text,13,-1,5,50,0,0,0,0,0"/>
+        </ComposerMapGrid>
+        <AtlasMap margin="0.10000000000000001" atlasDriven="0" scalingMode="2"/>
+      </LayoutItem>
+      <LayoutItem visibility="1" templateUuid="{9206a031-06ff-47da-8874-be78b2b8de36}" id="" position="17.8115,16.4053,mm" frameJoinStyle="miter" followPreset="false" opacity="1" groupUuid="" mapRotation="0" blendMode="0" size="51.0908,33.7481,mm" followPresetName="" zValue="4" excludeFromExports="0" positionOnPage="17.8115,16.4053,mm" itemRotation="0" drawCanvasItems="true" type="65639" referencePoint="0" background="true" positionLock="false" uuid="{9206a031-06ff-47da-8874-be78b2b8de36}" keepLayerSet="true" outlineWidthM="0.3,mm" frame="true">
+        <FrameColor green="0" blue="0" red="0" alpha="255"/>
+        <BackgroundColor green="255" blue="255" red="255" alpha="255"/>
+        <LayoutObject>
+          <dataDefinedProperties>
+            <Option type="Map">
+              <Option type="QString" name="name" value=""/>
+              <Option name="properties"/>
+              <Option type="QString" name="type" value="collection"/>
+            </Option>
+          </dataDefinedProperties>
+          <customproperties/>
+        </LayoutObject>
+        <Extent ymax="71.71137031043114973" xmin="-145.82810861675892511" ymin="12.03778179327975195" xmax="-55.48892574378847087"/>
+        <LayerSet>
+          <Layer source="file:///Users/jeewantha/Graduate%20Studies/Pinsky%20Lab/Project%20Velocity/project_velocity-master/gis/black_sea_bass_observations.csv?type=csv&amp;detectTypes=yes&amp;xField=lon&amp;yField=lat&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no" provider="delimitedtext" name="black_sea_bass_observations">black_sea_bass_observations_54ae270b_0cb1_4afc_beeb_ad4ed16edb7a</Layer>
+          <Layer source="/Users/jeewantha/Graduate Studies/Pinsky Lab/Project Velocity/project_velocity-master/gis/10m_physical/ne_10m_land.shp" provider="ogr" name="ne_10m_land">ne_10m_land_89fee001_3b9e_479b_a024_70499aed86d5</Layer>
+        </LayerSet>
+        <LayerStyles>
+          <LayerStyle source="file:///Users/jeewantha/Graduate%20Studies/Pinsky%20Lab/Project%20Velocity/project_velocity-master/gis/black_sea_bass_observations.csv?type=csv&amp;detectTypes=yes&amp;xField=lon&amp;yField=lat&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no" provider="delimitedtext" layerid="black_sea_bass_observations_54ae270b_0cb1_4afc_beeb_ad4ed16edb7a" name="black_sea_bass_observations">
+            <qgis simplifyAlgorithm="0" minScale="1e+08" version="3.4.12-Madeira" readOnly="0" simplifyDrawingTol="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" labelsEnabled="0" maxScale="0" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" simplifyLocal="1">
+              <flags>
+                <Identifiable>1</Identifiable>
+                <Removable>1</Removable>
+                <Searchable>1</Searchable>
+              </flags>
+              <renderer-v2 enableorderby="0" type="RuleRenderer" forceraster="0" symbollevels="0">
+                <rules key="{592119c4-92d3-4060-85ff-705a3778462f}">
+                  <rule key="{8650214c-9bf0-475f-8c09-7d3295f398bd}" label="1980 - Present" symbol="0" checkstate="0" filter="year > 1980"/>
+                  <rule key="{64a744fe-f3f4-4a26-9ec1-3c613c9b02ed}" label="1963 - 1980" symbol="1" checkstate="0" filter="year >= 1963 and year &lt;=1980"/>
+                </rules>
+                <symbols>
+                  <symbol type="marker" force_rhr="0" clip_to_extent="1" name="0" alpha="1">
+                    <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
+                      <prop v="0" k="angle"/>
+                      <prop v="0,0,0,255" k="color"/>
+                      <prop v="1" k="horizontal_anchor_point"/>
+                      <prop v="bevel" k="joinstyle"/>
+                      <prop v="circle" k="name"/>
+                      <prop v="0,0" k="offset"/>
+                      <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+                      <prop v="MM" k="offset_unit"/>
+                      <prop v="123,130,134,0" k="outline_color"/>
+                      <prop v="solid" k="outline_style"/>
+                      <prop v="0.4" k="outline_width"/>
+                      <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+                      <prop v="MM" k="outline_width_unit"/>
+                      <prop v="diameter" k="scale_method"/>
+                      <prop v="1.6" k="size"/>
+                      <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+                      <prop v="MM" k="size_unit"/>
+                      <prop v="1" k="vertical_anchor_point"/>
+                      <data_defined_properties>
+                        <Option type="Map">
+                          <Option type="QString" name="name" value=""/>
+                          <Option name="properties"/>
+                          <Option type="QString" name="type" value="collection"/>
+                        </Option>
+                      </data_defined_properties>
+                    </layer>
+                  </symbol>
+                  <symbol type="marker" force_rhr="0" clip_to_extent="1" name="1" alpha="1">
+                    <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
+                      <prop v="0" k="angle"/>
+                      <prop v="227,26,28,255" k="color"/>
+                      <prop v="1" k="horizontal_anchor_point"/>
+                      <prop v="bevel" k="joinstyle"/>
+                      <prop v="circle" k="name"/>
+                      <prop v="0,0" k="offset"/>
+                      <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+                      <prop v="MM" k="offset_unit"/>
+                      <prop v="0,0,0,0" k="outline_color"/>
+                      <prop v="solid" k="outline_style"/>
+                      <prop v="0.4" k="outline_width"/>
+                      <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+                      <prop v="MM" k="outline_width_unit"/>
+                      <prop v="diameter" k="scale_method"/>
+                      <prop v="1.6" k="size"/>
+                      <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+                      <prop v="MM" k="size_unit"/>
+                      <prop v="1" k="vertical_anchor_point"/>
+                      <data_defined_properties>
+                        <Option type="Map">
+                          <Option type="QString" name="name" value=""/>
+                          <Option name="properties"/>
+                          <Option type="QString" name="type" value="collection"/>
+                        </Option>
+                      </data_defined_properties>
+                    </layer>
+                  </symbol>
+                </symbols>
+              </renderer-v2>
+              <customproperties/>
+              <blendMode>0</blendMode>
+              <featureBlendMode>0</featureBlendMode>
+              <layerOpacity>1</layerOpacity>
+              <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+                <activeChecks type="StringList">
+                  <Option type="QString" value=""/>
+                </activeChecks>
+                <checkConfiguration/>
+              </geometryOptions>
+              <fieldConfiguration>
+                <field name="field_1">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="haulid">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="region">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="year">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="yearsurv">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="month">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="stratum">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="lat">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="lon">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="depth">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="bottemp">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="surftemp_orig">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="adjSST">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="surftemp">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="sppocean">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="Freq">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="wtcpue">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+              </fieldConfiguration>
+              <aliases>
+                <alias index="0" field="field_1" name=""/>
+                <alias index="1" field="haulid" name=""/>
+                <alias index="2" field="region" name=""/>
+                <alias index="3" field="year" name=""/>
+                <alias index="4" field="yearsurv" name=""/>
+                <alias index="5" field="month" name=""/>
+                <alias index="6" field="stratum" name=""/>
+                <alias index="7" field="lat" name=""/>
+                <alias index="8" field="lon" name=""/>
+                <alias index="9" field="depth" name=""/>
+                <alias index="10" field="bottemp" name=""/>
+                <alias index="11" field="surftemp_orig" name=""/>
+                <alias index="12" field="adjSST" name=""/>
+                <alias index="13" field="surftemp" name=""/>
+                <alias index="14" field="sppocean" name=""/>
+                <alias index="15" field="Freq" name=""/>
+                <alias index="16" field="wtcpue" name=""/>
+              </aliases>
+              <excludeAttributesWMS/>
+              <excludeAttributesWFS/>
+              <defaults>
+                <default expression="" field="field_1" applyOnUpdate="0"/>
+                <default expression="" field="haulid" applyOnUpdate="0"/>
+                <default expression="" field="region" applyOnUpdate="0"/>
+                <default expression="" field="year" applyOnUpdate="0"/>
+                <default expression="" field="yearsurv" applyOnUpdate="0"/>
+                <default expression="" field="month" applyOnUpdate="0"/>
+                <default expression="" field="stratum" applyOnUpdate="0"/>
+                <default expression="" field="lat" applyOnUpdate="0"/>
+                <default expression="" field="lon" applyOnUpdate="0"/>
+                <default expression="" field="depth" applyOnUpdate="0"/>
+                <default expression="" field="bottemp" applyOnUpdate="0"/>
+                <default expression="" field="surftemp_orig" applyOnUpdate="0"/>
+                <default expression="" field="adjSST" applyOnUpdate="0"/>
+                <default expression="" field="surftemp" applyOnUpdate="0"/>
+                <default expression="" field="sppocean" applyOnUpdate="0"/>
+                <default expression="" field="Freq" applyOnUpdate="0"/>
+                <default expression="" field="wtcpue" applyOnUpdate="0"/>
+              </defaults>
+              <constraints>
+                <constraint unique_strength="0" notnull_strength="0" field="field_1" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="haulid" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="region" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="year" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="yearsurv" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="month" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="stratum" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="lat" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="lon" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="depth" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="bottemp" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="surftemp_orig" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="adjSST" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="surftemp" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="sppocean" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="Freq" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="wtcpue" exp_strength="0" constraints="0"/>
+              </constraints>
+              <constraintExpressions>
+                <constraint desc="" field="field_1" exp=""/>
+                <constraint desc="" field="haulid" exp=""/>
+                <constraint desc="" field="region" exp=""/>
+                <constraint desc="" field="year" exp=""/>
+                <constraint desc="" field="yearsurv" exp=""/>
+                <constraint desc="" field="month" exp=""/>
+                <constraint desc="" field="stratum" exp=""/>
+                <constraint desc="" field="lat" exp=""/>
+                <constraint desc="" field="lon" exp=""/>
+                <constraint desc="" field="depth" exp=""/>
+                <constraint desc="" field="bottemp" exp=""/>
+                <constraint desc="" field="surftemp_orig" exp=""/>
+                <constraint desc="" field="adjSST" exp=""/>
+                <constraint desc="" field="surftemp" exp=""/>
+                <constraint desc="" field="sppocean" exp=""/>
+                <constraint desc="" field="Freq" exp=""/>
+                <constraint desc="" field="wtcpue" exp=""/>
+              </constraintExpressions>
+              <expressionfields/>
+              <attributeactions>
+                <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+              </attributeactions>
+              <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+                <columns/>
+              </attributetableconfig>
+              <conditionalstyles>
+                <rowstyles/>
+                <fieldstyles/>
+              </conditionalstyles>
+              <editform tolerant="1"/>
+              <editforminit/>
+              <editforminitcodesource>0</editforminitcodesource>
+              <editforminitfilepath/>
+              <editforminitcode><![CDATA[]]></editforminitcode>
+              <featformsuppress>0</featformsuppress>
+              <editorlayout>generatedlayout</editorlayout>
+              <editable/>
+              <labelOnTop/>
+              <widgets/>
+              <previewExpression/>
+              <mapTip/>
+              <layerGeometryType>0</layerGeometryType>
+            </qgis>
+          </LayerStyle>
+          <LayerStyle source="/Users/jeewantha/Graduate Studies/Pinsky Lab/Project Velocity/project_velocity-master/gis/10m_physical/ne_10m_land.shp" provider="ogr" layerid="ne_10m_land_89fee001_3b9e_479b_a024_70499aed86d5" name="ne_10m_land">
+            <qgis simplifyAlgorithm="0" minScale="1e+08" version="3.4.12-Madeira" readOnly="0" simplifyDrawingTol="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" labelsEnabled="0" maxScale="0" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" simplifyLocal="1">
+              <flags>
+                <Identifiable>1</Identifiable>
+                <Removable>1</Removable>
+                <Searchable>1</Searchable>
+              </flags>
+              <renderer-v2 enableorderby="0" type="singleSymbol" forceraster="0" symbollevels="0">
+                <symbols>
+                  <symbol type="fill" force_rhr="0" clip_to_extent="1" name="0" alpha="1">
+                    <layer class="SimpleFill" pass="0" enabled="1" locked="0">
+                      <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+                      <prop v="229,211,201,255" k="color"/>
+                      <prop v="bevel" k="joinstyle"/>
+                      <prop v="0,0" k="offset"/>
+                      <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+                      <prop v="MM" k="offset_unit"/>
+                      <prop v="0,0,0,0" k="outline_color"/>
+                      <prop v="solid" k="outline_style"/>
+                      <prop v="0.26" k="outline_width"/>
+                      <prop v="MM" k="outline_width_unit"/>
+                      <prop v="solid" k="style"/>
+                      <data_defined_properties>
+                        <Option type="Map">
+                          <Option type="QString" name="name" value=""/>
+                          <Option name="properties"/>
+                          <Option type="QString" name="type" value="collection"/>
+                        </Option>
+                      </data_defined_properties>
+                    </layer>
+                  </symbol>
+                </symbols>
+                <rotation/>
+                <sizescale/>
+              </renderer-v2>
+              <customproperties/>
+              <blendMode>0</blendMode>
+              <featureBlendMode>0</featureBlendMode>
+              <layerOpacity>1</layerOpacity>
+              <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+                <activeChecks type="StringList">
+                  <Option type="QString" value=""/>
+                </activeChecks>
+                <checkConfiguration/>
+              </geometryOptions>
+              <fieldConfiguration>
+                <field name="featurecla">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="scalerank">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="min_zoom">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+              </fieldConfiguration>
+              <aliases>
+                <alias index="0" field="featurecla" name=""/>
+                <alias index="1" field="scalerank" name=""/>
+                <alias index="2" field="min_zoom" name=""/>
+              </aliases>
+              <excludeAttributesWMS/>
+              <excludeAttributesWFS/>
+              <defaults>
+                <default expression="" field="featurecla" applyOnUpdate="0"/>
+                <default expression="" field="scalerank" applyOnUpdate="0"/>
+                <default expression="" field="min_zoom" applyOnUpdate="0"/>
+              </defaults>
+              <constraints>
+                <constraint unique_strength="0" notnull_strength="0" field="featurecla" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="scalerank" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="min_zoom" exp_strength="0" constraints="0"/>
+              </constraints>
+              <constraintExpressions>
+                <constraint desc="" field="featurecla" exp=""/>
+                <constraint desc="" field="scalerank" exp=""/>
+                <constraint desc="" field="min_zoom" exp=""/>
+              </constraintExpressions>
+              <expressionfields/>
+              <attributeactions>
+                <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+              </attributeactions>
+              <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+                <columns/>
+              </attributetableconfig>
+              <conditionalstyles>
+                <rowstyles/>
+                <fieldstyles/>
+              </conditionalstyles>
+              <editform tolerant="1"/>
+              <editforminit/>
+              <editforminitcodesource>0</editforminitcodesource>
+              <editforminitfilepath/>
+              <editforminitcode><![CDATA[]]></editforminitcode>
+              <featformsuppress>0</featformsuppress>
+              <editorlayout>generatedlayout</editorlayout>
+              <editable/>
+              <labelOnTop/>
+              <widgets/>
+              <previewExpression/>
+              <mapTip/>
+              <layerGeometryType>2</layerGeometryType>
+            </qgis>
+          </LayerStyle>
+        </LayerStyles>
+        <ComposerMapOverview inverted="0" blendMode="0" frameMap="{5844f2df-005e-4e9c-bdb7-02a7cd047905}" centered="0" uuid="{2ccd555f-54fa-4678-a003-860feff12238}" show="1" name="Overview 1">
+          <symbol type="fill" force_rhr="0" clip_to_extent="1" name="" alpha="0.235294">
+            <layer class="SimpleFill" pass="0" enabled="1" locked="0">
+              <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+              <prop v="0,0,0,255" k="color"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="no" k="outline_style"/>
+              <prop v="0.26" k="outline_width"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="solid" k="style"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" name="name" value=""/>
+                  <Option name="properties"/>
+                  <Option type="QString" name="type" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </ComposerMapOverview>
+        <AtlasMap margin="0.10000000000000001" atlasDriven="0" scalingMode="2"/>
+      </LayoutItem>
+      <LayoutItem height="3" frameJoinStyle="miter" numMapUnitsPerScaleBarUnit="1" lineJoinStyle="miter" uuid="{24d23cac-8cb8-45e0-8cae-14d9ce655a24}" unitLabel="km" position="42.8322,188.006,mm" mapUuid="{5844f2df-005e-4e9c-bdb7-02a7cd047905}" frame="false" itemRotation="0" numUnitsPerSegment="250" labelBarSpace="3" type="65646" positionLock="false" segmentSizeMode="0" outlineWidth="0.3" positionOnPage="42.8322,188.006,mm" minBarWidth="50" blendMode="0" zValue="3" outlineWidthM="0.3,mm" visibility="1" id="" maxBarWidth="150" groupUuid="" alignment="0" style="Single Box" segmentMillimeters="17.3645" numSegmentsLeft="0" referencePoint="4" boxContentSpace="1" unitType="km" numSegments="2" excludeFromExports="0" size="50.3414,19.2177,mm" background="false" templateUuid="{24d23cac-8cb8-45e0-8cae-14d9ce655a24}" lineCapStyle="square" opacity="1">
+        <FrameColor green="0" blue="0" red="0" alpha="255"/>
+        <BackgroundColor green="255" blue="255" red="255" alpha="255"/>
+        <LayoutObject>
+          <dataDefinedProperties>
+            <Option type="Map">
+              <Option type="QString" name="name" value=""/>
+              <Option name="properties"/>
+              <Option type="QString" name="type" value="collection"/>
+            </Option>
+          </dataDefinedProperties>
+          <customproperties/>
+        </LayoutObject>
+        <text-style fontLetterSpacing="0" namedStyle="" fontSizeUnit="Point" textColor="0,0,0,255" textOpacity="1" blendMode="0" fontItalic="0" fontStrikeout="0" fontWordSpacing="0" multilineHeight="1" fontFamily=".SF NS Text" fontCapitals="0" fontWeight="50" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontSize="12" fontUnderline="0">
+          <text-buffer bufferSize="1" bufferOpacity="1" bufferBlendMode="0" bufferNoFill="1" bufferColor="255,255,255,255" bufferJoinStyle="128" bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferDraw="0"/>
+          <background shapeSizeY="0" shapeRotation="0" shapeRadiiX="0" shapeDraw="0" shapeSVGFile="" shapeOffsetX="0" shapeRotationType="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthUnit="MM" shapeOpacity="1" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeBorderColor="128,128,128,255" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiY="0" shapeBlendMode="0" shapeOffsetUnit="MM" shapeSizeX="0" shapeJoinStyle="64" shapeFillColor="255,255,255,255" shapeType="0" shapeSizeType="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="MM" shapeBorderWidth="0" shapeSizeUnit="MM" shapeOffsetY="0"/>
+          <shadow shadowOffsetAngle="135" shadowOpacity="0.7" shadowRadiusUnit="MM" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowUnder="0" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadius="1.5" shadowDraw="0" shadowOffsetUnit="MM" shadowScale="100" shadowBlendMode="6" shadowOffsetGlobal="1" shadowColor="0,0,0,255" shadowOffsetDist="1" shadowRadiusAlphaOnly="0"/>
+        </text-style>
+        <fillColor green="0" blue="0" red="0" alpha="255"/>
+        <fillColor2 green="255" blue="255" red="255" alpha="255"/>
+        <strokeColor green="0" blue="0" red="0" alpha="255"/>
+      </LayoutItem>
+      <LayoutItem visibility="1" templateUuid="{5844f2df-005e-4e9c-bdb7-02a7cd047905}" id="" position="13.2735,10.3173,mm" frameJoinStyle="miter" followPreset="false" opacity="1" groupUuid="" mapRotation="0" blendMode="0" size="135.076,189.364,mm" followPresetName="" zValue="1" excludeFromExports="0" positionOnPage="13.2735,10.3173,mm" itemRotation="0" drawCanvasItems="true" type="65639" referencePoint="0" background="true" positionLock="false" uuid="{5844f2df-005e-4e9c-bdb7-02a7cd047905}" keepLayerSet="true" outlineWidthM="0.3,mm" frame="true">
+        <FrameColor green="0" blue="0" red="0" alpha="255"/>
+        <BackgroundColor green="255" blue="255" red="255" alpha="255"/>
+        <LayoutObject>
+          <dataDefinedProperties>
+            <Option type="Map">
+              <Option type="QString" name="name" value=""/>
+              <Option name="properties"/>
+              <Option type="QString" name="type" value="collection"/>
+            </Option>
+          </dataDefinedProperties>
+          <customproperties/>
+        </LayoutObject>
+        <Extent ymax="46.88758888037698114" xmin="-86.25268469434641361" ymin="20.70244252915462724" xmax="-67.5743803867709687"/>
+        <LayerSet>
+          <Layer source="file:///Users/jeewantha/Graduate%20Studies/Pinsky%20Lab/Project%20Velocity/project_velocity-master/gis/black_sea_bass_observations.csv?type=csv&amp;detectTypes=yes&amp;xField=lon&amp;yField=lat&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no" provider="delimitedtext" name="black_sea_bass_observations">black_sea_bass_observations_54ae270b_0cb1_4afc_beeb_ad4ed16edb7a</Layer>
+          <Layer source="/Users/jeewantha/Graduate Studies/Pinsky Lab/Project Velocity/project_velocity-master/gis/10m_physical/ne_10m_land.shp" provider="ogr" name="ne_10m_land">ne_10m_land_89fee001_3b9e_479b_a024_70499aed86d5</Layer>
+        </LayerSet>
+        <LayerStyles>
+          <LayerStyle source="file:///Users/jeewantha/Graduate%20Studies/Pinsky%20Lab/Project%20Velocity/project_velocity-master/gis/black_sea_bass_observations.csv?type=csv&amp;detectTypes=yes&amp;xField=lon&amp;yField=lat&amp;crs=EPSG:4326&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no" provider="delimitedtext" layerid="black_sea_bass_observations_54ae270b_0cb1_4afc_beeb_ad4ed16edb7a" name="black_sea_bass_observations">
+            <qgis simplifyAlgorithm="0" minScale="1e+08" version="3.4.12-Madeira" readOnly="0" simplifyDrawingTol="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" labelsEnabled="0" maxScale="0" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" simplifyLocal="1">
+              <flags>
+                <Identifiable>1</Identifiable>
+                <Removable>1</Removable>
+                <Searchable>1</Searchable>
+              </flags>
+              <renderer-v2 enableorderby="0" type="RuleRenderer" forceraster="0" symbollevels="0">
+                <rules key="{592119c4-92d3-4060-85ff-705a3778462f}">
+                  <rule key="{8650214c-9bf0-475f-8c09-7d3295f398bd}" label="1980 - Present" symbol="0" checkstate="0" filter="year > 1980"/>
+                  <rule key="{64a744fe-f3f4-4a26-9ec1-3c613c9b02ed}" label="1963 - 1980" symbol="1" filter="year >= 1963 and year &lt;=1980"/>
+                </rules>
+                <symbols>
+                  <symbol type="marker" force_rhr="0" clip_to_extent="1" name="0" alpha="1">
+                    <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
+                      <prop v="0" k="angle"/>
+                      <prop v="0,0,0,255" k="color"/>
+                      <prop v="1" k="horizontal_anchor_point"/>
+                      <prop v="bevel" k="joinstyle"/>
+                      <prop v="circle" k="name"/>
+                      <prop v="0,0" k="offset"/>
+                      <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+                      <prop v="MM" k="offset_unit"/>
+                      <prop v="123,130,134,0" k="outline_color"/>
+                      <prop v="solid" k="outline_style"/>
+                      <prop v="0.4" k="outline_width"/>
+                      <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+                      <prop v="MM" k="outline_width_unit"/>
+                      <prop v="diameter" k="scale_method"/>
+                      <prop v="1.6" k="size"/>
+                      <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+                      <prop v="MM" k="size_unit"/>
+                      <prop v="1" k="vertical_anchor_point"/>
+                      <data_defined_properties>
+                        <Option type="Map">
+                          <Option type="QString" name="name" value=""/>
+                          <Option name="properties"/>
+                          <Option type="QString" name="type" value="collection"/>
+                        </Option>
+                      </data_defined_properties>
+                    </layer>
+                  </symbol>
+                  <symbol type="marker" force_rhr="0" clip_to_extent="1" name="1" alpha="1">
+                    <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
+                      <prop v="0" k="angle"/>
+                      <prop v="227,26,28,255" k="color"/>
+                      <prop v="1" k="horizontal_anchor_point"/>
+                      <prop v="bevel" k="joinstyle"/>
+                      <prop v="circle" k="name"/>
+                      <prop v="0,0" k="offset"/>
+                      <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+                      <prop v="MM" k="offset_unit"/>
+                      <prop v="0,0,0,0" k="outline_color"/>
+                      <prop v="solid" k="outline_style"/>
+                      <prop v="0.4" k="outline_width"/>
+                      <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+                      <prop v="MM" k="outline_width_unit"/>
+                      <prop v="diameter" k="scale_method"/>
+                      <prop v="1.6" k="size"/>
+                      <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+                      <prop v="MM" k="size_unit"/>
+                      <prop v="1" k="vertical_anchor_point"/>
+                      <data_defined_properties>
+                        <Option type="Map">
+                          <Option type="QString" name="name" value=""/>
+                          <Option name="properties"/>
+                          <Option type="QString" name="type" value="collection"/>
+                        </Option>
+                      </data_defined_properties>
+                    </layer>
+                  </symbol>
+                </symbols>
+              </renderer-v2>
+              <customproperties/>
+              <blendMode>0</blendMode>
+              <featureBlendMode>0</featureBlendMode>
+              <layerOpacity>1</layerOpacity>
+              <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+                <activeChecks type="StringList">
+                  <Option type="QString" value=""/>
+                </activeChecks>
+                <checkConfiguration/>
+              </geometryOptions>
+              <fieldConfiguration>
+                <field name="field_1">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="haulid">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="region">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="year">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="yearsurv">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="month">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="stratum">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="lat">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="lon">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="depth">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="bottemp">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="surftemp_orig">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="adjSST">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="surftemp">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="sppocean">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="Freq">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="wtcpue">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+              </fieldConfiguration>
+              <aliases>
+                <alias index="0" field="field_1" name=""/>
+                <alias index="1" field="haulid" name=""/>
+                <alias index="2" field="region" name=""/>
+                <alias index="3" field="year" name=""/>
+                <alias index="4" field="yearsurv" name=""/>
+                <alias index="5" field="month" name=""/>
+                <alias index="6" field="stratum" name=""/>
+                <alias index="7" field="lat" name=""/>
+                <alias index="8" field="lon" name=""/>
+                <alias index="9" field="depth" name=""/>
+                <alias index="10" field="bottemp" name=""/>
+                <alias index="11" field="surftemp_orig" name=""/>
+                <alias index="12" field="adjSST" name=""/>
+                <alias index="13" field="surftemp" name=""/>
+                <alias index="14" field="sppocean" name=""/>
+                <alias index="15" field="Freq" name=""/>
+                <alias index="16" field="wtcpue" name=""/>
+              </aliases>
+              <excludeAttributesWMS/>
+              <excludeAttributesWFS/>
+              <defaults>
+                <default expression="" field="field_1" applyOnUpdate="0"/>
+                <default expression="" field="haulid" applyOnUpdate="0"/>
+                <default expression="" field="region" applyOnUpdate="0"/>
+                <default expression="" field="year" applyOnUpdate="0"/>
+                <default expression="" field="yearsurv" applyOnUpdate="0"/>
+                <default expression="" field="month" applyOnUpdate="0"/>
+                <default expression="" field="stratum" applyOnUpdate="0"/>
+                <default expression="" field="lat" applyOnUpdate="0"/>
+                <default expression="" field="lon" applyOnUpdate="0"/>
+                <default expression="" field="depth" applyOnUpdate="0"/>
+                <default expression="" field="bottemp" applyOnUpdate="0"/>
+                <default expression="" field="surftemp_orig" applyOnUpdate="0"/>
+                <default expression="" field="adjSST" applyOnUpdate="0"/>
+                <default expression="" field="surftemp" applyOnUpdate="0"/>
+                <default expression="" field="sppocean" applyOnUpdate="0"/>
+                <default expression="" field="Freq" applyOnUpdate="0"/>
+                <default expression="" field="wtcpue" applyOnUpdate="0"/>
+              </defaults>
+              <constraints>
+                <constraint unique_strength="0" notnull_strength="0" field="field_1" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="haulid" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="region" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="year" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="yearsurv" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="month" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="stratum" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="lat" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="lon" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="depth" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="bottemp" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="surftemp_orig" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="adjSST" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="surftemp" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="sppocean" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="Freq" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="wtcpue" exp_strength="0" constraints="0"/>
+              </constraints>
+              <constraintExpressions>
+                <constraint desc="" field="field_1" exp=""/>
+                <constraint desc="" field="haulid" exp=""/>
+                <constraint desc="" field="region" exp=""/>
+                <constraint desc="" field="year" exp=""/>
+                <constraint desc="" field="yearsurv" exp=""/>
+                <constraint desc="" field="month" exp=""/>
+                <constraint desc="" field="stratum" exp=""/>
+                <constraint desc="" field="lat" exp=""/>
+                <constraint desc="" field="lon" exp=""/>
+                <constraint desc="" field="depth" exp=""/>
+                <constraint desc="" field="bottemp" exp=""/>
+                <constraint desc="" field="surftemp_orig" exp=""/>
+                <constraint desc="" field="adjSST" exp=""/>
+                <constraint desc="" field="surftemp" exp=""/>
+                <constraint desc="" field="sppocean" exp=""/>
+                <constraint desc="" field="Freq" exp=""/>
+                <constraint desc="" field="wtcpue" exp=""/>
+              </constraintExpressions>
+              <expressionfields/>
+              <attributeactions>
+                <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+              </attributeactions>
+              <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+                <columns/>
+              </attributetableconfig>
+              <conditionalstyles>
+                <rowstyles/>
+                <fieldstyles/>
+              </conditionalstyles>
+              <editform tolerant="1"/>
+              <editforminit/>
+              <editforminitcodesource>0</editforminitcodesource>
+              <editforminitfilepath/>
+              <editforminitcode><![CDATA[]]></editforminitcode>
+              <featformsuppress>0</featformsuppress>
+              <editorlayout>generatedlayout</editorlayout>
+              <editable/>
+              <labelOnTop/>
+              <widgets/>
+              <previewExpression/>
+              <mapTip/>
+              <layerGeometryType>0</layerGeometryType>
+            </qgis>
+          </LayerStyle>
+          <LayerStyle source="/Users/jeewantha/Graduate Studies/Pinsky Lab/Project Velocity/project_velocity-master/gis/10m_physical/ne_10m_land.shp" provider="ogr" layerid="ne_10m_land_89fee001_3b9e_479b_a024_70499aed86d5" name="ne_10m_land">
+            <qgis simplifyAlgorithm="0" minScale="1e+08" version="3.4.12-Madeira" readOnly="0" simplifyDrawingTol="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" labelsEnabled="0" maxScale="0" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" simplifyLocal="1">
+              <flags>
+                <Identifiable>1</Identifiable>
+                <Removable>1</Removable>
+                <Searchable>1</Searchable>
+              </flags>
+              <renderer-v2 enableorderby="0" type="singleSymbol" forceraster="0" symbollevels="0">
+                <symbols>
+                  <symbol type="fill" force_rhr="0" clip_to_extent="1" name="0" alpha="1">
+                    <layer class="SimpleFill" pass="0" enabled="1" locked="0">
+                      <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+                      <prop v="229,211,201,255" k="color"/>
+                      <prop v="bevel" k="joinstyle"/>
+                      <prop v="0,0" k="offset"/>
+                      <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+                      <prop v="MM" k="offset_unit"/>
+                      <prop v="0,0,0,0" k="outline_color"/>
+                      <prop v="solid" k="outline_style"/>
+                      <prop v="0.26" k="outline_width"/>
+                      <prop v="MM" k="outline_width_unit"/>
+                      <prop v="solid" k="style"/>
+                      <data_defined_properties>
+                        <Option type="Map">
+                          <Option type="QString" name="name" value=""/>
+                          <Option name="properties"/>
+                          <Option type="QString" name="type" value="collection"/>
+                        </Option>
+                      </data_defined_properties>
+                    </layer>
+                  </symbol>
+                </symbols>
+                <rotation/>
+                <sizescale/>
+              </renderer-v2>
+              <customproperties/>
+              <blendMode>0</blendMode>
+              <featureBlendMode>0</featureBlendMode>
+              <layerOpacity>1</layerOpacity>
+              <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+                <activeChecks type="StringList">
+                  <Option type="QString" value=""/>
+                </activeChecks>
+                <checkConfiguration/>
+              </geometryOptions>
+              <fieldConfiguration>
+                <field name="featurecla">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="scalerank">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+                <field name="min_zoom">
+                  <editWidget type="">
+                    <config>
+                      <Option/>
+                    </config>
+                  </editWidget>
+                </field>
+              </fieldConfiguration>
+              <aliases>
+                <alias index="0" field="featurecla" name=""/>
+                <alias index="1" field="scalerank" name=""/>
+                <alias index="2" field="min_zoom" name=""/>
+              </aliases>
+              <excludeAttributesWMS/>
+              <excludeAttributesWFS/>
+              <defaults>
+                <default expression="" field="featurecla" applyOnUpdate="0"/>
+                <default expression="" field="scalerank" applyOnUpdate="0"/>
+                <default expression="" field="min_zoom" applyOnUpdate="0"/>
+              </defaults>
+              <constraints>
+                <constraint unique_strength="0" notnull_strength="0" field="featurecla" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="scalerank" exp_strength="0" constraints="0"/>
+                <constraint unique_strength="0" notnull_strength="0" field="min_zoom" exp_strength="0" constraints="0"/>
+              </constraints>
+              <constraintExpressions>
+                <constraint desc="" field="featurecla" exp=""/>
+                <constraint desc="" field="scalerank" exp=""/>
+                <constraint desc="" field="min_zoom" exp=""/>
+              </constraintExpressions>
+              <expressionfields/>
+              <attributeactions>
+                <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+              </attributeactions>
+              <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+                <columns/>
+              </attributetableconfig>
+              <conditionalstyles>
+                <rowstyles/>
+                <fieldstyles/>
+              </conditionalstyles>
+              <editform tolerant="1"/>
+              <editforminit/>
+              <editforminitcodesource>0</editforminitcodesource>
+              <editforminitfilepath/>
+              <editforminitcode><![CDATA[]]></editforminitcode>
+              <featformsuppress>0</featformsuppress>
+              <editorlayout>generatedlayout</editorlayout>
+              <editable/>
+              <labelOnTop/>
+              <widgets/>
+              <previewExpression/>
+              <mapTip/>
+              <layerGeometryType>2</layerGeometryType>
+            </qgis>
+          </LayerStyle>
+        </LayerStyles>
+        <ComposerMapGrid rightFrameDivisions="0" gridFrameSideFlags="15" leftAnnotationPosition="1" intervalX="10" uuid="{7971558d-c8ff-4dd4-ad6f-8b4e1895f396}" offsetX="0" rightAnnotationDisplay="3" rightAnnotationPosition="1" unit="0" annotationPrecision="0" bottomAnnotationDirection="0" topAnnotationDirection="0" gridStyle="3" gridFrameWidth="2" offsetY="0" rightAnnotationDirection="0" topAnnotationDisplay="0" gridFramePenColor="0,0,0,255" annotationExpression="" blendMode="0" topFrameDivisions="0" crossLength="3" bottomAnnotationPosition="1" annotationFontColor="0,0,0,255" bottomAnnotationDisplay="0" bottomFrameDivisions="0" name="Grid 1" frameFillColor2="0,0,0,255" showAnnotation="1" frameFillColor1="255,255,255,255" leftAnnotationDirection="0" show="1" leftFrameDivisions="0" gridFramePenThickness="0.29999999999999999" leftAnnotationDisplay="0" topAnnotationPosition="1" gridFrameStyle="2" annotationFormat="4" frameAnnotationDistance="1" intervalY="10">
+          <lineStyle>
+            <symbol type="line" force_rhr="0" clip_to_extent="1" name="" alpha="1">
+              <layer class="SimpleLine" pass="0" enabled="1" locked="0">
+                <prop v="flat" k="capstyle"/>
+                <prop v="5;2" k="customdash"/>
+                <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+                <prop v="MM" k="customdash_unit"/>
+                <prop v="0" k="draw_inside_polygon"/>
+                <prop v="bevel" k="joinstyle"/>
+                <prop v="0,0,0,255" k="line_color"/>
+                <prop v="solid" k="line_style"/>
+                <prop v="0.3" k="line_width"/>
+                <prop v="MM" k="line_width_unit"/>
+                <prop v="0" k="offset"/>
+                <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+                <prop v="MM" k="offset_unit"/>
+                <prop v="0" k="ring_filter"/>
+                <prop v="0" k="use_custom_dash"/>
+                <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+                <data_defined_properties>
+                  <Option type="Map">
+                    <Option type="QString" name="name" value=""/>
+                    <Option name="properties"/>
+                    <Option type="QString" name="type" value="collection"/>
+                  </Option>
+                </data_defined_properties>
+              </layer>
+            </symbol>
+          </lineStyle>
+          <markerStyle>
+            <symbol type="marker" force_rhr="0" clip_to_extent="1" name="" alpha="1">
+              <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
+                <prop v="0" k="angle"/>
+                <prop v="0,0,0,255" k="color"/>
+                <prop v="1" k="horizontal_anchor_point"/>
+                <prop v="bevel" k="joinstyle"/>
+                <prop v="circle" k="name"/>
+                <prop v="0,0" k="offset"/>
+                <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+                <prop v="MM" k="offset_unit"/>
+                <prop v="35,35,35,255" k="outline_color"/>
+                <prop v="solid" k="outline_style"/>
+                <prop v="0" k="outline_width"/>
+                <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+                <prop v="MM" k="outline_width_unit"/>
+                <prop v="diameter" k="scale_method"/>
+                <prop v="2" k="size"/>
+                <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+                <prop v="MM" k="size_unit"/>
+                <prop v="1" k="vertical_anchor_point"/>
+                <data_defined_properties>
+                  <Option type="Map">
+                    <Option type="QString" name="name" value=""/>
+                    <Option name="properties"/>
+                    <Option type="QString" name="type" value="collection"/>
+                  </Option>
+                </data_defined_properties>
+              </layer>
+            </symbol>
+          </markerStyle>
+          <annotationFontProperties style="" description=".SF NS Text,13,-1,5,50,0,0,0,0,0"/>
+        </ComposerMapGrid>
+        <AtlasMap margin="0.10000000000000001" atlasDriven="0" scalingMode="2"/>
+      </LayoutItem>
+      <customproperties>
+        <property key="atlasRasterFormat" value="png"/>
+        <property key="imageAntialias" value="true"/>
+        <property key="imageCropMarginBottom" value="0"/>
+        <property key="imageCropMarginLeft" value="0"/>
+        <property key="imageCropMarginRight" value="0"/>
+        <property key="imageCropMarginTop" value="0"/>
+        <property key="imageCropToContents" value="false"/>
+      </customproperties>
+      <Atlas pageNameExpression="" coverageLayer="" filenamePattern="'output_'||@atlas_featurenumber" filterFeatures="0" sortFeatures="0" enabled="0" hideCoverage="0"/>
+    </Layout>
+  </Layouts>
+</qgis>
