@@ -1,0 +1,71 @@
+# Visualizing Interactions - Part VIII
+# Here we will plot the GAM
+# Author - Jeewantha Bandara (mailto:jeewantha.bandara@rutgers.edu) 
+# Research Group - Pinsky Lab, Rutgers University (https://pinsky.marine.rutgers.edu)
+# Following Advanced R style guide - http://adv-r.had.co.nz/Style.html
+
+library(mgcv)
+library(tidyverse)
+
+# Read the GAM for presence/absence
+mi_model_gam_1 <- readRDS(file="data/mi_model_gam_1.rds")
+# Read the GAM for biomass/abundance
+mi_model_gam_2 <- readRDS(file="data/mi_model_gam_2.rds")
+
+summary(mi_model_gam_2)
+
+png(filename="mi_model_gam_smooths.png", width=6, height=6, units="in", res=300)
+# Setting up a plot of 3x3 grids
+par(mfrow=c(4,3))
+# First SBT.seasonal
+plot(mi_model_gam_2, select=1, xlab="Seasonal Bottom Temp.(C)",
+     ylab=paste("s(Seasonal Bottom Temp,",
+                round(summary(mi_model_gam_2)$edf[1],3),")"),
+     shade=T)
+# Then Dissolved Oxygen
+plot(mi_model_gam_2, select=2, xlab="Dissolved Oxygen (mol/kg)",
+     ylab=paste("s(Dissolved Oxygen,",
+                round(summary(mi_model_gam_2)$edf[2],3),")"),
+     shade=T)
+# Then metabolic index
+plot(mi_model_gam_2, select=3, xlab="MI",
+     ylab=paste("s(MI,",
+                round(summary(mi_model_gam_2)$edf[3],3),")"),
+     shade=T)
+# Then zooplankton class mean sum
+plot(mi_model_gam_2, select=4, xlab="Seasonal Zooplankton Density (mg/kg)",
+     ylab=paste("s(Seas. Zooplank. Dens.),",
+                round(summary(mi_model_gam_2)$edf[4],3),")"),
+     shade=T)
+# Then Seasonal Surface Temp
+plot(mi_model_gam_2, select=5, xlab="Seasonal Surface Temp. (C)",
+     ylab=paste("s(Seasonal Surface Temp,",
+                round(summary(mi_model_gam_2)$edf[5],3),")"),
+     shade=T)
+# Then Sea bottom temp minimum
+plot(mi_model_gam_2, select=6, xlab="Minimum Sea Bottom Temp. (C)",
+     ylab=paste("s(Minimum Sea Bottom Temp,",
+                round(summary(mi_model_gam_2)$edf[6],3),")"),
+     shade=T)
+# Then Sea bottom temp maximum
+plot(mi_model_gam_2, select=7, xlab="Maximum Sea Bottom Temp. (C)",
+     ylab=paste("s(Maximum Sea Bottom Temp,",
+                round(summary(mi_model_gam_2)$edf[7],3),")"),
+     shade=T)
+# Then Sea surface temp maximum
+plot(mi_model_gam_2, select=8, xlab="Maximum Sea Surface Temp (C)",
+     ylab=paste("s(Maximum Sea Surface Temp,",
+                round(summary(mi_model_gam_2)$edf[8],3),")"),
+     shade=T)
+# Then Rugosity
+plot(mi_model_gam_2, select=9, xlab="Rugosity",
+     ylab=paste("s(Rugosity,",
+                round(summary(mi_model_gam_2)$edf[9],3),")"),
+     shade=T)
+# Then Grainsize
+plot(mi_model_gam_2, select=10, xlab="Grainsize",
+     ylab=paste("s(Grainsize,",
+                round(summary(mi_model_gam_2)$edf[10],3),")"),
+     shade=T)
+
+dev.off()
