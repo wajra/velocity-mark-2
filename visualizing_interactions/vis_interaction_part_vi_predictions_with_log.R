@@ -110,13 +110,19 @@ test_plot <- ggplot(data = world) +
 #                       mid = "#c994c7",
 #                       high = "#dd1c77",
 #                       midpoint = 0.5)
-  scale_fill_gradientn(colors=c("#ffffcc","#a1dab4","#41b6c4", "#225ea8"))
+  scale_fill_gradientn(colors=c("#ffffcc","#a1dab4","#41b6c4", "#225ea8"),
+                       values = scales::rescale(c(0,.05,0.15, max(sum_abundance$x))))
+
+# https://stackoverflow.com/questions/41985921/specify-manual-values-for-scale-gradientn-with-transformed-color-fill-variable
 
 plot_2 <- ggplot(data = world) +
   geom_sf() +
   coord_sf(xlim = c(lon_min, lon_max), ylim = c(lat_min, lat_max), expand = FALSE) +
   geom_tile(data=sum, aes(lon, lat, width=0.25, fill=x)) + 
-  scale_fill_gradientn(colors=c("#ffffcc","#a1dab4","#41b6c4", "#225ea8")) + 
+  # scale_fill_gradientn(colors=c("#ffffd9", "#edf8b1","#c7e9b4", "#7fcdbb",
+  #                              "#41b6c4", "#1d91c0","#225ea8", "#0c2c84")) + 
+  scale_fill_gradientn(colors=c("#ffffcc","#a1dab4","#41b6c4", "#225ea8"),
+                       values = scales::rescale(c(0,.05,0.15, max(sum$x)))) + 
   labs(fill="log(Biomass+1)") + xlab("Longitude") + ylab("Latitude") + 
   annotation_north_arrow(location = 'br', which_north = 'true', 
                          pad_x = unit(0.1, 'in'), pad_y = unit(0.3, 'in'), 
@@ -125,6 +131,6 @@ plot_2 <- ggplot(data = world) +
                          width=unit(1, "cm"))
 
 # low = "blue", mid = "green", high = "red"
-png("roms_figures_output_ver_1/classic_model_predictions_log_ver_2.png", width=6, height=6, units="in", res=300)
+png("roms_figures_output_ver_1/classic_model_predictions_log_ver_3.png", width=6, height=6, units="in", res=300)
 gridExtra::grid.arrange(test_plot, plot_2, nrow=2)
 dev.off()

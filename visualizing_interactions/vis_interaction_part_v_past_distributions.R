@@ -105,17 +105,20 @@ plot_1 <- ggplot(data = world) +
   coord_sf(xlim = c(lon_min, lon_max), ylim = c(lat_min, lat_max), expand = FALSE) +
   labs(fill="Biomass (kg/tow)") + ylab("Latitude") + xlab("") + 
   geom_tile(data=sum_1980, aes(lon, lat, width = 0.25, fill = x)) + 
-  scale_fill_gradientn(colors=c("#ffffcc","#a1dab4","#41b6c4", "#225ea8")) +  
+  scale_fill_gradientn(colors=c("#ffffcc","#a1dab4","#41b6c4", "#225ea8"),
+                       values = scales::rescale(c(0,0.5,1.5, max(sum_1980$x)))) +  
   annotate(geom = "text", x = lon_min + 4, y = lat_max - 3, label = "1980-1990", 
             size = 3)
 
+# Setting the scale for plot 1 - values = scales::rescale(c(0,0.5,1.5, max(sum_1980$x)))
 # Previously used 'scale_fill_gradient2()' here for coloring the geom_tile
 
 plot_2 <- ggplot(data = world) +
   geom_sf() +
   coord_sf(xlim = c(lon_min, lon_max), ylim = c(lat_min, lat_max), expand = FALSE) +
   geom_tile(data=sum_2000, aes(lon, lat, width=0.25, fill=x)) + 
-  scale_fill_gradientn(colors=c("#ffffcc","#a1dab4","#41b6c4", "#225ea8")) + 
+  scale_fill_gradientn(colors=c("#ffffcc","#a1dab4","#41b6c4", "#225ea8"),
+                       values = scales::rescale(c(0,1,2.5, max(sum_2000$x)))) + 
   labs(fill="Biomass (kg/tow)") + xlab("Longitude") + ylab("Latitude") + 
   annotation_north_arrow(location = 'br', which_north = 'true', 
                          pad_x = unit(0.1, 'in'), pad_y = unit(0.3, 'in'), 
@@ -127,6 +130,6 @@ plot_2 <- ggplot(data = world) +
 
 # scale_fill_gradient(low = "#56B1F7", high = "#132B43"s)
 
-png("roms_figures_output_ver_1/bsb_dist_1990_to_2010_ver_3.png", width=6, height=6, units="in", res=300)
+png("roms_figures_output_ver_1/bsb_dist_1990_to_2010_ver_4.png", width=6, height=6, units="in", res=300)
 gridExtra::grid.arrange(plot_1, plot_2, nrow=2)
 dev.off()
