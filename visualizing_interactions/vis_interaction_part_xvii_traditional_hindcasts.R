@@ -42,3 +42,10 @@ ggplot() +
 
 ggplot() +
   geom_tile(data=hindcast_post_2000, aes(longrid, latgrid, width=0.5, fill=preds))
+
+
+# So, what we need to do is as follows
+# Step 1 : Get the hauls dataset with the new O2, ZPLK parameters and marge it with species data
+# Step 2 : Then do the presfit.pad on them
+# Step 3 : Then for the test/train split, do what we did in this code
+# Step 4 : Then run the model and plot it based on what we did here from line 32 to 36

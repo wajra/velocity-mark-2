@@ -92,11 +92,11 @@ bsb_result_matrix <- bsb_result_matrix %>%
 # tl.srt -> Rotation of the text
 # Get the correlation matrix again
 # Save it to a PNG file
-png(filename = "exploratory_figures/correlation_plot_all_observations.png",
+png(filename = "exploratory_figures/correlation_plot_all_observations_without_diag.png",
     width = 5, height = 5, units = "in", pointsize = 12,
     bg = "white", res = 300)
 corrplot::corrplot(bsb_cor_matrix, type = "upper", 
-                   order = "hclust", tl.col = "black", tl.srt = 90)
+                   order = "hclust", tl.col = "black", tl.srt = 90, diag=FALSE)
 dev.off()
 
 
