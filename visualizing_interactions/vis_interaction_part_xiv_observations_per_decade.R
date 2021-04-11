@@ -42,4 +42,6 @@ merged_obs <- merged_obs %>% mutate(year_intervals = cut_interval(year.x, n = 5)
 
 group_surveys <- merged_obs %>% group_by(regionfact, year_intervals)  %>% summarise(n = n())
 
+survey_name_group <- merged_obs %>% dplyr::count(regionfact)
+
 # Drop the NAs

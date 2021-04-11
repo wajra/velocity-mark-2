@@ -13,6 +13,10 @@ abundance_se_predictions_df <- read_csv("visualizing_interactions/abundance_se_p
 presence_predictions_df <- read_csv("visualizing_interactions/presence_predictions.csv")
 presence_se_predictions_df <- read_csv("visualizing_interactions/presence_se_predictions.csv")
 
+abundance_predictions_df$O2.seasonal <- abundance_predictions_df$O2.seasonal*32*1000/0.9766
+abundance_se_predictions_df$O2.seasonal <- abundance_se_predictions_df$O2.seasonal*32*1000/0.9766
+presence_predictions_df$O2.seasonal <- presence_predictions_df$O2.seasonal*32*1000/0.9766
+presence_se_predictions_df$O2.seasonal <- presence_se_predictions_df$O2.seasonal*32*1000/0.9766
 
 abundance_plot <- ggplot(abundance_predictions_df, 
                          aes(SBT.seasonal, O2.seasonal, fill= Abundance)) + 
@@ -25,8 +29,9 @@ abundance_plot <- ggplot(abundance_predictions_df,
   xlab("") + ylab("Dissolved Oxygen (mg/L)") +
   geom_tile()+
   scale_fill_gradient(low="white", high="blue") +
-  annotate("text", x = 3, y = 3.5e-04, label = "(a)")
-abundance_plot
+  annotate("text", x = 3, y = 10, label = "(a)")
+
+# annotate("text", x = 3, y = 3.5e-04, label = "(a)")
 
 abundance_se_plot <- ggplot(abundance_se_predictions_df, 
                             aes(SBT.seasonal, O2.seasonal, fill= SE)) + 
@@ -39,7 +44,7 @@ abundance_se_plot <- ggplot(abundance_se_predictions_df,
   xlab("") + ylab("") +
   geom_tile()+
   scale_fill_gradient(low="white", high="red") +
-  annotate("text", x = 3, y = 3.5e-04, label = "(b)")
+  annotate("text", x = 3, y = 10, label = "(b)")
 
 
 presence_plot <- ggplot(presence_predictions_df, 
@@ -53,7 +58,7 @@ presence_plot <- ggplot(presence_predictions_df,
   xlab("Temperature (C)") + ylab("Dissolved Oxygen (mg/L)") +
   geom_tile() +
   scale_fill_gradient(low="white", high="blue") +
-  annotate("text", x = 3, y = 3.5e-04, label = "(c)")
+  annotate("text", x = 3, y = 10, label = "(c)")
 
 presence_se_plot <- ggplot(presence_se_predictions_df, 
                            aes(SBT.seasonal, O2.seasonal, fill= Presence.SE)) + 
@@ -66,8 +71,8 @@ presence_se_plot <- ggplot(presence_se_predictions_df,
   xlab("Temperature (C)") + ylab("") +
   geom_tile() +
   scale_fill_gradient(low="white", high="red") +
-  annotate("text", x = 3, y = 3.5e-04, label = "(d)")
+  annotate("text", x = 3, y = 10, label = "(d)")
 
-png("roms_figures_output_ver_1/collective_plot_predictive_ver_2.png", width=6, height=6, units="in", res=300)
-grid.arrange(abundance_plot, abundance_se_plot, presence_plot, presence_se_plot, nrow=2)
+png("roms_figures_output_ver_1/collective_plot_predictive_ver_3.png", width=6, height=6, units="in", res=300)
+gridExtra::grid.arrange(abundance_plot, abundance_se_plot, presence_plot, presence_se_plot, nrow=2)
 dev.off()

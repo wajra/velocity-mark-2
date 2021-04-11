@@ -32,7 +32,8 @@ hindcast <- read.csv(file="roms_model_output_ver_1/classic_model_full_hindcast.c
 # Worst performing model - roms_model_output_ver_1/full_dataset_hindcast.csv
 # roms_model_output_ver_1/classic_model_full_hindcast.csv
 
-hindcast_1985 <- hindcast[(hindcast$year>=1985 & hindcast$year<1995),]
+# 2021-02-28 -> Originally from 1980 to 1990
+hindcast_1985 <- hindcast[(hindcast$year>=1980 & hindcast$year<1990),]
 
 
 """
@@ -131,6 +132,6 @@ plot_2 <- ggplot(data = world) +
                          width=unit(1, "cm"))
 
 # low = "blue", mid = "green", high = "red"
-png("roms_figures_output_ver_1/classic_model_predictions_log_ver_3.png", width=6, height=6, units="in", res=300)
+png("roms_figures_output_ver_1/classic_model_predictions_log_ver_4.png", width=6, height=6, units="in", res=300)
 gridExtra::grid.arrange(test_plot, plot_2, nrow=2)
 dev.off()

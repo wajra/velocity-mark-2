@@ -14,7 +14,7 @@ mi_model_gam_2 <- readRDS(file="data/mi_model_gam_2.rds")
 
 summary(mi_model_gam_2)
 
-png(filename="mi_model_gam_smooths.png", width=6, height=6, units="in", res=300)
+png(filename="roms_figures_output_ver_1/mi_model_gam_smooths_ver_2.png", width=8, height=7, units="in", res=300)
 # Setting up a plot of 3x3 grids
 par(mfrow=c(4,3))
 # First SBT.seasonal
@@ -69,3 +69,135 @@ plot(mi_model_gam_2, select=10, xlab="Grainsize",
      shade=T)
 
 dev.off()
+
+
+
+#################### ONLY WITH PARTIAL EFFECT AS THE Y AXIS ##################
+
+png(filename="roms_figures_output_ver_1/mi_model_gam_smooths_ver_11.png",
+    width=6, height=8, units="in", res=300)
+# Setting up a plot of 3x3 grids
+par(mfrow=c(4,3))
+# First SBT.seasonal
+par(mai=c(0.62,0.55,0.1,0.1))
+plot(mi_model_gam_2, select=1, xlab="Seasonal Bottom Temp",
+     ylab="Partial effect",
+     shade=T, cex.lab=1.2, cex.axis=1.1)
+# Then Dissolved Oxygen
+plot(mi_model_gam_2, select=2, xlab="Dissolved Oxygen",
+     ylab="",shade=T, cex.lab=1.2)
+# Then metabolic index
+plot(mi_model_gam_2, select=3, xlab="MI",
+     ylab="",shade=T, cex.lab=1.2)
+# Then zooplankton class mean sum
+plot(mi_model_gam_2, select=4, xlab="Seasonal Zooplankton Density",
+     ylab="Partial effect",
+     shade=T, cex.lab=1.2, cex.axis=1.1)
+# Then Seasonal Surface Temp
+plot(mi_model_gam_2, select=5, xlab="Seasonal Surface Temp.",
+     ylab="",
+     shade=T, cex.lab=1.2, cex.axis=1.1)
+# Then Sea bottom temp minimum
+plot(mi_model_gam_2, select=6, xlab="Minimum Sea Bottom Temp.",
+     ylab="",
+     shade=T, cex.lab=1.2, cex.axis=1.1)
+# Then Sea bottom temp maximum
+plot(mi_model_gam_2, select=7, xlab="Maximum Sea Bottom Temp.",
+     ylab="Partial effect",
+     shade=T, cex.lab=1.2, cex.axis=1.1)
+# Then Sea surface temp maximum
+plot(mi_model_gam_2, select=8, xlab="Maximum Sea Surface Temp.",
+     ylab="",
+     shade=T, cex.lab=1.2, cex.axis=1.1)
+# Then Rugosity
+plot(mi_model_gam_2, select=9, xlab="Rugosity",
+     ylab="",
+     shade=T, cex.lab=1.2, cex.axis=1.1)
+# Then Grainsize
+plot(mi_model_gam_2, select=10, xlab="Grainsize",
+     ylab="Partial effect",
+     shade=T, cex.lab=1.2, cex.axis=1.1)
+
+dev.off()
+
+
+###################### Plotting only the six most significant curves #######
+
+png(filename="roms_figures_output_ver_1/mi_model_gam_smooths_ver_12.png",
+    width=6, height=4, units="in", res=300)
+# Setting up a plot of 3x3 grids
+par(mfrow=c(2,3))
+# First SBT.seasonal
+par(mai=c(0.62,0.55,0.1,0.1))
+plot(mi_model_gam_2, select=1, xlab="Seasonal Bottom Temp",
+     ylab="Partial effect",
+     shade=T, cex.lab=1.2, cex.axis=1.1)
+# Then Dissolved Oxygen
+plot(mi_model_gam_2, select=2, xlab="Dissolved Oxygen",
+     ylab="",shade=T, cex.lab=1.2)
+# Then metabolic index
+plot(mi_model_gam_2, select=3, xlab="MI",
+     ylab="",shade=T, cex.lab=1.2)
+plot(mi_model_gam_2, select=8, xlab="Maximum Sea Surface Temp.",
+     ylab="",
+     shade=T, cex.lab=1.2, cex.axis=1.1)
+plot(mi_model_gam_2, select=5, xlab="Seasonal Surface Temp.",
+     ylab="",
+     shade=T, cex.lab=1.2, cex.axis=1.1)
+# Then Grainsize
+plot(mi_model_gam_2, select=10, xlab="Grainsize",
+     ylab="Partial effect",
+     shade=T, cex.lab=1.2, cex.axis=1.1)
+
+dev.off()
+
+
+######################################################################
+
+png(filename="roms_figures_output_ver_1/mi_model_gam_pres_abs_ver_1.png",
+    width=6, height=8, units="in", res=300)
+# Setting up a plot of 3x3 grids
+par(mfrow=c(4,3))
+# First SBT.seasonal
+par(mai=c(0.62,0.55,0.1,0.1))
+plot(mi_model_gam_1, select=1, xlab="Seasonal Bottom Temp",
+     ylab="Partial effect",
+     shade=T, cex.lab=1.2, cex.axis=1.1)
+# Then Dissolved Oxygen
+plot(mi_model_gam_1, select=2, xlab="Dissolved Oxygen",
+     ylab="",shade=T, cex.lab=1.2)
+# Then metabolic index
+plot(mi_model_gam_1, select=3, xlab="MI",
+     ylab="",shade=T, cex.lab=1.2)
+# Then zooplankton class mean sum
+plot(mi_model_gam_1, select=4, xlab="Seasonal Zooplankton Density",
+     ylab="Partial effect",
+     shade=T, cex.lab=1.2, cex.axis=1.1)
+# Then Seasonal Surface Temp
+plot(mi_model_gam_1, select=5, xlab="Seasonal Surface Temp.",
+     ylab="",
+     shade=T, cex.lab=1.2, cex.axis=1.1)
+# Then Sea bottom temp minimum
+plot(mi_model_gam_1, select=6, xlab="Minimum Sea Bottom Temp.",
+     ylab="",
+     shade=T, cex.lab=1.2, cex.axis=1.1)
+# Then Sea bottom temp maximum
+plot(mi_model_gam_1, select=7, xlab="Maximum Sea Bottom Temp.",
+     ylab="Partial effect",
+     shade=T, cex.lab=1.2, cex.axis=1.1)
+# Then Sea surface temp maximum
+plot(mi_model_gam_1, select=8, xlab="Maximum Sea Surface Temp.",
+     ylab="",
+     shade=T, cex.lab=1.2, cex.axis=1.1)
+# Then Rugosity
+plot(mi_model_gam_1, select=9, xlab="Rugosity",
+     ylab="",
+     shade=T, cex.lab=1.2, cex.axis=1.1)
+# Then Grainsize
+plot(mi_model_gam_1, select=10, xlab="Grainsize",
+     ylab="Partial effect",
+     shade=T, cex.lab=1.2, cex.axis=1.1)
+
+dev.off()
+
+
